@@ -1,6 +1,6 @@
-"use client";
-import Link from "next/link";
-import { useState } from "react";
+'use client';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,11 +10,11 @@ export default function Navbar() {
 
   // Navigation items array
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Product", href: "/product" },
-    { name: "Projects", href: "/projects" },
-    { name: "Certificates", href: "/certificates" },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Product', href: '/product' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Certificates', href: '/certificates' },
   ];
 
   return (
@@ -55,7 +55,7 @@ export default function Navbar() {
           {/* Mobile Menu */}
           <div
             className={`fixed top-0 left-0 min-h-screen w-64 bg-slate-100 shadow-lg transform transition-transform duration-300 ease-in-out ${
-              isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+              isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
             } lg:hidden z-50`}
           >
             <div className="flex flex-row items-center border-b pb-4">
@@ -96,7 +96,7 @@ export default function Navbar() {
                 </li>
               ))}
               <li className="mt-4">
-                <button className="bg-black text-white px-8 py-2 rounded-md hover:bg-black-500">
+                <button className="bg-[#1B3B47] text-white px-8 py-2 rounded-md hover:bg-black-500">
                   Contact
                 </button>
               </li>
@@ -117,7 +117,7 @@ export default function Navbar() {
                 </li>
               ))}
               <li>
-                <button className="bg-black hover:bg-black-500 text-white px-8 py-2 rounded-md">
+                <button className="bg-[#1B3B47] hover:bg-black-500 text-white px-8 py-2 rounded-md">
                   Contact
                 </button>
               </li>
