@@ -23,15 +23,30 @@ const ThemeContext = createContext<ThemeContextType>({
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState(defaultTheme);
+  const [mounted, setMounted] = useState(false);
 
-  // Update CSS variables when theme changes
+  // Only run the effect after mounting on client side
   useEffect(() => {
-    document.documentElement.style.setProperty("--primary", theme.primaryColor);
-    document.documentElement.style.setProperty(
-      "--secondary",
-      theme.secondaryColor
-    );
-  }, [theme]);
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (mounted) {
+      document.documentElement.style.setProperty(
+        "--primary",
+        theme.primaryColor
+      );
+      document.documentElement.style.setProperty(
+        "--secondary",
+        theme.secondaryColor
+      );
+    }
+  }, [theme, mounted]);
+
+  // Prevent flash of unstyled content during SSR
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

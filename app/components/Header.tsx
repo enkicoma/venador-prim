@@ -47,7 +47,8 @@ export default function Header() {
           <nav className="hidden md:flex items-center justify-center flex-1 mx-4">
             <div className="flex items-center space-x-8">
               <NavLink href="/">Home</NavLink>
-              <NavLink href="/product">Product</NavLink>
+              <NavLink href="/about">About</NavLink>
+              <NavLink href="/products">Products</NavLink>
               <NavLink href="/services">Services</NavLink>
               <NavLink href="/projects">Projects</NavLink>
               <NavLink href="/certificates">Certificates</NavLink>
@@ -142,7 +143,8 @@ export default function Header() {
           <div className="md:hidden mt-2 rounded-lg bg-white shadow-lg p-4">
             <nav className="flex flex-col space-y-4">
               <MobileNavLink href="/">Home</MobileNavLink>
-              <MobileNavLink href="/product">Product</MobileNavLink>
+              <MobileNavLink href="/about">About</MobileNavLink>
+              <MobileNavLink href="/products">Products</MobileNavLink>
               <MobileNavLink href="/services">Services</MobileNavLink>
               <MobileNavLink href="/projects">Projects</MobileNavLink>
               <MobileNavLink href="/certificates">Certificates</MobileNavLink>
