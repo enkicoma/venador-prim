@@ -22,7 +22,7 @@ export default function ManufacturingFeatures({
           {title}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col p-4 rounded-[10px]" style={{boxShadow: "0px 0px 10px 0px #0000001A"}}>
               {/* Image Container */}

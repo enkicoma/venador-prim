@@ -1,7 +1,7 @@
 import heroImage from "@/public/images/contact-bg.jpeg";
 import HeroSection from "../components/hero-section";
 import ProductRange from "../components/products/product-range";
-import FeatureSection from "../components/products/feature-section";
+import FeatureSection from "../components/feature-section";
 
 const whyChooseUsFeatures = {
   title: "Why Choose Our Products?",

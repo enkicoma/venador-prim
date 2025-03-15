@@ -1,6 +1,16 @@
 import heroImage from "@/public/images/contact-bg.jpeg";
 import ManufacturingFeatures from "../components/about/manufacturing-features";
 import HeroSection from "../components/hero-section";
+import CoreValues from "../components/about/core-values";
+import FeatureSection from "../components/feature-section";
+
+
+const whyChooseUsFeatures = {
+    title: "Advanced Superior Technology",
+    description:
+      "At Venador Prime, our mission is to provide cutting-edge concrete solutions that redefine durability and structural integrity. We strive to deliver superior craftsmanship, innovative designs, and sustainable building solutions that exceed industry standards. Our commitment to quality and customer satisfaction drives us to create pillars that form the foundation of strong, resilient structures.",
+    image: heroImage.src,
+  };
 
 const manufacturingFeatures = {
   title: "We Are a Manufacturing Company",
@@ -34,6 +44,8 @@ export default function ContactPage() {
       />
       <div className="pt-24 pb-32">
         <ManufacturingFeatures {...manufacturingFeatures} />
+        <FeatureSection {...whyChooseUsFeatures} reverse={true} />
+        <CoreValues />
       </div>
     </div>
   );
