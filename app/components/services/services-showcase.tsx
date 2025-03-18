@@ -1,6 +1,11 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
 import projectImg from "@/public/images/contact-bg.jpeg";
+import psr1 from "@/public/images/services/psr-1.png";
+import psr2 from "@/public/images/services/psr-2.png";
+import psr3 from "@/public/images/services/psr-3.png";
+import psr4 from "@/public/images/services/psr-4.png";
+import psr5 from "@/public/images/services/psr-5.png";
 
 interface ProjectFeature {
   title: string;
@@ -11,7 +16,7 @@ interface ProjectFeature {
 const services: ProjectFeature[] = [
   {
     title: "Engineering",
-    image: projectImg.src,
+    image: psr1.src,
     features: [
       "Tailored for Strength – Designed to fit your project’s specific needs.",
       "Premium Materials – Ensuring durability and long-lasting support.",
@@ -20,7 +25,7 @@ const services: ProjectFeature[] = [
   },
   {
     title: "Consultation",
-    image: projectImg.src,
+    image: psr2.src,
     features: [
       "Fast & Efficient – Reduces construction time with ready-made pillars.",
       "Consistent Quality – Manufactured to exact specifications.",
@@ -29,7 +34,7 @@ const services: ProjectFeature[] = [
   },
   {
     title: "Transport",
-    image: projectImg.src,
+    image: psr3.src,
     features: [
       "Enhanced Durability – Increases load-bearing capacity.",
       "Reliable Performance – Ideal for high-rise buildings and infrastructure.",
@@ -38,7 +43,7 @@ const services: ProjectFeature[] = [
   },
   {
     title: "Logistics",
-    image: projectImg.src,
+    image: psr4.src,
     features: [
       "Sustainable Materials – Reduces environmental impact.",
       "Energy-Efficient Production – Lower carbon footprint in manufacturing.",

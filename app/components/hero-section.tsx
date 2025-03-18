@@ -4,15 +4,17 @@ interface HeroSectionProps {
   title: string;
   description: string;
   backgroundImage?: string;
+  className?: string;
 }
 
 export default function HeroSection({
   title,
   description,
   backgroundImage = "",
+  className = "",
 }: HeroSectionProps) {
   return (
-    <section className="relative min-h-[500px] flex items-center justify-center pt-28 pb-16">
+    <section className={`relative min-h-[500px] flex items-center justify-center pt-28 pb-16 ${className}`}>
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         {backgroundImage && (

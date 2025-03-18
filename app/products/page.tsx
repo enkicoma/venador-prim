@@ -1,4 +1,5 @@
-import heroImage from "@/public/images/contact-bg.jpeg";
+import heroImage from "@/public/images/products/product-hero-bg.jpeg";
+import chooseImage from "@/public/images/products/choose-product.jpeg";
 import HeroSection from "../components/hero-section";
 import ProductRange from "../components/products/product-range";
 import FeatureSection from "../components/feature-section";
@@ -24,7 +25,7 @@ const whyChooseUsFeatures = {
         "With efficient logistics, we ensure timely delivery to your project site.",
     },
   ],
-  image: heroImage.src,
+  image: chooseImage.src,
 };
 
 export default function ContactPage() {

@@ -2,7 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import projectImg from "@/public/images/contact-bg.jpeg";
+import projectImg1 from "@/public/images/products/upr-1.png";
+import projectImg2 from "@/public/images/products/upr-2.png";
+import projectImg3 from "@/public/images/products/upr-3.png";
+import projectImg4 from "@/public/images/products/upr-4.png";
+import projectImg5 from "@/public/images/products/upr-5.png";
+import projectImg6 from "@/public/images/products/upr-6.png";
+
 
 interface Product {
   title: string;
@@ -16,42 +22,42 @@ const products: Product[] = [
       title: "Standard Concrete Pillars",
       description:
         "High-strength, reinforced concrete pillars designed for general construction applications.",
-      image: projectImg.src,
+      image: projectImg1.src,
       link: "/products/standard-concrete-pillars",
     },
     {
       title: "Precast Concrete Pillars",
       description:
         "Ready-made pillars for quick installation, reducing construction time and costs.",
-      image: projectImg.src,
+      image: projectImg2.src,
       link: "/products/precast-concrete-pillars",
     },
     {
       title: "Custom-Designed Pillars",
       description:
         "Tailored solutions to meet unique project specifications and architectural requirements.",
-      image: projectImg.src,
+      image: projectImg3.src,
       link: "/products/custom-designed-pillars",
     },
     {
       title: "Heavy-Duty Load-Bearing Pillars",
       description:
         "Engineered for industrial and large-scale infrastructure projects requiring maximum strength.",
-      image: projectImg.src,
+      image: projectImg4.src,
       link: "/products/heavy-duty-load-bearing-pillars",
     },
     {
       title: "Decorative Architectural Pillars",
       description:
         "Aesthetic and functional concrete pillars designed for commercial and residential spaces.",
-      image: projectImg.src,
+      image: projectImg5.src,
       link: "/products/decorative-architectural-pillars",
     },
     {
       title: "Eco-Friendly Sustainable Pillars",
       description:
         "Manufactured using environmentally friendly materials and processes for green building projects.",
-      image: projectImg.src,
+      image: projectImg6.src,
       link: "/products/eco-friendly-sustainable-pillars",
     },
   ];

@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils"
 import { useEffect, useRef, useState } from "react"
+import { MoveRight } from "lucide-react";
 
 export default function ProcessSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -75,17 +76,20 @@ export default function ProcessSection() {
                 transitionDelay: isVisible ? `${index * 200}ms` : "0ms",
               }}
             >
+
               {/* Circle with number */}
               <div className="relative mb-6">
-                <div className="w-24 h-24 rounded-full border-2 border-dashed border-[#666666] flex items-center justify-center">
-                  <div className="w-20 h-20 rounded-full bg-[#1B3B47] flex items-center justify-center text-white text-4xl font-bold">
+                <div className="w-36 h-36 rounded-full border-2 border-dashed border-[#666666] flex items-center justify-center">
+                  <div className="w-32 h-32 rounded-full bg-[#1B3B47] flex items-center justify-center text-white text-5xl font-semibold">
                     {step.number}
                   </div>
                 </div>
 
                 {/* Connecting line - only for first two items on desktop */}
                 {index < 2 && (
-                  <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 border-t-2 border-dashed border-[#666666] transform translate-x-full" />
+                  <div className="hidden md:block absolute top-1/2 -right-4 w-[100%] h-0.5 border-t-2 border-dashed border-[#666666] transform translate-x-full" >
+                    {/* <MoveRight /> */}
+                  </div>
                 )}
               </div>
 

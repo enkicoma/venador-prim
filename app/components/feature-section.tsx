@@ -61,7 +61,7 @@ export default function FeatureSection({
                   </div>
                   <div>
                     <p className="text-gray-600">
-                      {feature.title} - {feature.description}
+                      {feature.title && feature.title} - {feature.description && feature.description}
                     </p>
                   </div>
                 </div>

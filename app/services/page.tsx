@@ -1,4 +1,4 @@
-import heroImage from "@/public/images/contact-bg.jpeg";
+import heroImage from "@/public/images/services/services-hero-bg.jpeg";
 import HeroSection from "../components/hero-section";
 import ServicesShowcase from "../components/services/services-showcase";
 import ProcessSection from "../components/services/process-section";

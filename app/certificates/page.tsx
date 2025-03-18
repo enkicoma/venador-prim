@@ -1,83 +1,96 @@
 import CardSlider from "../components/card-slider";
 import CertificationsSection from "../components/certificates/certifications-section";
-import heroImage from "@/public/images/contact-bg.jpeg";
+import tpImage1 from "@/public/images/certificates/tp-1.png";
+import tpImage2 from "@/public/images/certificates/tp-2.png";
+import tpImage3 from "@/public/images/certificates/tp-3.png";
+import tpImage4 from "@/public/images/certificates/tp-4.png";
+import tpImage5 from "@/public/images/certificates/tp-5.png";
+
+import ocImage1 from "@/public/images/certificates/oc-1.png";
+import ocImage2 from "@/public/images/certificates/oc-2.png";
+import ocImage3 from "@/public/images/certificates/oc-3.png";
+import ocImage4 from "@/public/images/certificates/oc-4.png";
+import ocImage5 from "@/public/images/certificates/oc-5.png";
+import ocImage6 from "@/public/images/certificates/oc-6.png";
+import ocImage7 from "@/public/images/certificates/oc-7.png";
+import ocImage8 from "@/public/images/certificates/oc-8.png";
+import ocImage9 from "@/public/images/certificates/oc-9.png";
+import ocImage10 from "@/public/images/certificates/oc-10.png";
+import ocImage11 from "@/public/images/certificates/oc-11.png";
+import ocImage12 from "@/public/images/certificates/oc-12.png";
+
 
 const testingProcessSlides = [
   {
-    image: heroImage.src,
+    image: tpImage1.src,
     alt: "Material testing in laboratory",
-    title: "Material Testing",
   },
   {
-    image: heroImage.src,
+    image: tpImage2.src,
     alt: "Structural inspection of concrete pillars",
-    title: "Structural Inspection",
   },
   {
-    image: heroImage.src,
+    image: tpImage3.src,
     alt: "Quality control technicians checking specifications",
-    title: "Quality Control",
   },
   {
-    image: heroImage.src,
+    image: tpImage4.src,
     alt: "Load testing equipment for concrete pillars",
-    title: "Load Testing",
   },
   {
-    image: heroImage.src,
+    image: tpImage5.src,
     alt: "Durability testing in environmental chamber",
-    title: "Durability Testing",
   },
 ];
 
 const certifications = [
   {
     name: "ISO 9001:2015",
-    image: heroImage.src,
+    image: ocImage1.src,
   },
   {
     name: "CE Mark",
-    image: heroImage.src,
+    image: ocImage2.src,
   },
   {
     name: "Industry Excellence Awards",
-    image: heroImage.src,
+    image: ocImage3.src,
   },
   {
     name: "LEED Certification",
-    image: heroImage.src,
+    image: ocImage4.src,
   },
   {
     name: "US Green Building Council",
-    image: heroImage.src,
+    image: ocImage5.src,
   },
   {
     name: "Trusted Seller",
-    image: heroImage.src,
+    image: ocImage6.src,
   },
   {
     name: "100% Trusted",
-    image: heroImage.src,
+    image: ocImage7.src,
   },
   {
     name: "ASTM International",
-    image: heroImage.src,
+    image: ocImage8.src,
   },
   {
     name: "ACI Certification",
-    image: heroImage.src,
+    image: ocImage9.src,
   },
   {
     name: "BBA",
-    image: heroImage.src,
+    image: ocImage10.src,
   },
   {
     name: "IGBC Member",
-    image: heroImage.src,
+    image: ocImage11.src,
   },
   {
     name: "USGBC LEED",
-    image: heroImage.src,
+    image: ocImage12.src,
   },
 ];
 

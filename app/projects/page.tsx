@@ -1,7 +1,9 @@
-import heroImage from "@/public/images/contact-bg.jpeg";
+import heroImage from "@/public/images/projects/projects-hero-bg.jpeg";
 import HeroSection from "../components/hero-section";
 import ProjectMap from "../components/projects/ProjectMap";
 import ProjectsShowcase from "../components/projects/projects-showcase";
+
+
 
 export default function ContactPage() {
   return (

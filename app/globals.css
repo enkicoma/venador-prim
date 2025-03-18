@@ -97,3 +97,8 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.popup-container {
+  scrollbar-gutter: stable;
+  overflow-y: auto;
+}

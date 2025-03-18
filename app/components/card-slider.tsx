@@ -1,33 +1,41 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 // Import Swiper and required modules
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules"
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Navigation,
+  Pagination,
+  A11y,
+  Autoplay,
+  FreeMode,
+} from "swiper/modules";
 
 // Import Swiper styles
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 interface SlideItem {
-  image: string
-  alt: string
-  title?: string
-  description?: string
+  image: string;
+  alt: string;
+  title?: string;
+  description?: string;
 }
 
 interface ImageSliderProps {
-  title?: string
-  slides: SlideItem[]
-  autoplay?: boolean
-  showNavigation?: boolean
-  showPagination?: boolean
-  className?: string
+  title?: string;
+  slides: SlideItem[];
+  autoplay?: boolean;
+  showNavigation?: boolean;
+  showPagination?: boolean;
+  className?: string;
+  children?: React.ReactNode;
+  slidesPerView?: number;
 }
 
 export default function CardSlider({
@@ -37,30 +45,36 @@ export default function CardSlider({
   showNavigation = true,
   showPagination = true,
   className,
+  children,
+  slidesPerView = 4,
 }: ImageSliderProps) {
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false);
 
   // Prevent hydration issues with Swiper
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   if (!mounted) {
-    return null
+    return null;
   }
 
   return (
     <section className={cn("w-full py-16 bg-white relative", className)}>
-      <div className="container mx-auto px-4">
+      <div className="">
         {title && (
-          <h2 className="text-4xl font-bold text-center mb-12" style={{ color: "#1B3B47" }}>
+          <h2
+            className="text-4xl font-bold text-center mb-12"
+            style={{ color: "#1B3B47" }}
+          >
             {title}
           </h2>
         )}
+        {children}
 
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative ">
           <Swiper
-            modules={[Navigation, Pagination, A11y, Autoplay]}
+            modules={[Navigation, Pagination, A11y, Autoplay, FreeMode]}
             spaceBetween={20}
             slidesPerView={1}
             breakpoints={{
@@ -68,7 +82,7 @@ export default function CardSlider({
                 slidesPerView: 2,
               },
               1024: {
-                slidesPerView: 3,
+                slidesPerView: slidesPerView,
               },
             }}
             pagination={
@@ -76,7 +90,8 @@ export default function CardSlider({
                 ? {
                     clickable: true,
                     el: ".swiper-pagination",
-                    bulletClass: "inline-block w-2 h-2 rounded-full bg-gray-300 mx-1 cursor-pointer transition-all",
+                    bulletClass:
+                      "inline-block w-2 h-2 rounded-full bg-gray-300 mx-1 cursor-pointer transition-all",
                     bulletActiveClass: "!bg-primary w-3 h-3",
                   }
                 : false
@@ -98,10 +113,12 @@ export default function CardSlider({
                 : false
             }
             loop={true}
+            // centeredSlides={true}
+            freeMode={true}
             className="pb-12"
           >
             {slides.map((slide, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className="">
                 <div className="rounded-xl overflow-hidden h-64 md:h-80">
                   <Image
                     src={slide.image || "/placeholder.svg"}
@@ -110,13 +127,25 @@ export default function CardSlider({
                     height={400}
                     className="w-full h-full object-cover"
                   />
+                  {/* Text Overlay */}
                   {(slide.title || slide.description) && (
-                    <div className="absolute bottom-0 left-0 right-0 bg-black/60 p-4 text-white">
-                      {slide.title && <h3 className="font-semibold text-lg">{slide.title}</h3>}
+                    <div
+                      className="absolute bottom-4 left-4 right-4 rounded-md py-6 px-4"
+                      style={{ backdropFilter: "blur(134px)" }}
+                    >
+                      {slide.title && <h3 className="font-semibold text-lg text-white">{slide.title}</h3>}
                       {slide.description && <p className="text-sm text-white/90">{slide.description}</p>}
                     </div>
                   )}
                 </div>
+                {/* <div className="absolute bottom-0 left-0 right-0 bg-black/60 p-4 text-white">
+                      <h3 className="text-white text-xl font-semibold mb-1">
+                        {product.title}
+                      </h3>
+                      <p className="text-white/90 text-sm">
+                        {product.description}
+                      </p>
+                    </div> */}
               </SwiperSlide>
             ))}
           </Swiper>
@@ -142,8 +171,7 @@ export default function CardSlider({
       </div>
 
       {/* Custom Pagination - Moved to bottom of section */}
-      <div className="swiper-pagination flex justify-center items-center mt-8 pb-4 absolute bottom-0 left-0 right-0"></div>
+      <div className="swiper-pagination flex justify-center items-center mt-4 pb-4 absolute bottom-0 left-0 right-0"></div>
     </section>
-  )
+  );
 }
-

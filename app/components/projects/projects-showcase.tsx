@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
-import projectImg from "@/public/images/contact-bg.jpeg";
+import bleImage1 from "@/public/images/projects/ble-1.png";
+import bleImage2 from "@/public/images/projects/ble-2.png";
+import bleImage3 from "@/public/images/projects/ble-3.png";
+import bleImage4 from "@/public/images/projects/ble-4.png";
+import bleImage5 from "@/public/images/projects/ble-5.png";
+import bleImage6 from "@/public/images/projects/ble-6.png";
+
 
 interface ProjectFeature {
   title: string;
@@ -14,7 +20,7 @@ const projects: ProjectFeature[] = [
     title: "Skyline Tower – High-Rise Reinforcement",
     description:
       "A 50-story commercial tower strengthened with our reinforced concrete pillars, ensuring maximum load-bearing capacity and long-term stability.",
-    image: projectImg.src,
+    image: bleImage1.src,
     features: [
       "Engineered for earthquake resistance.",
       "High-strength concrete for skyscrapers.",
@@ -25,7 +31,7 @@ const projects: ProjectFeature[] = [
     title: "Metro Bridge – Infrastructure Excellence",
     description:
       "A large-scale transportation project utilizing our precast concrete pillars for enhanced durability and seamless construction efficiency.",
-    image: projectImg.src,
+    image: bleImage2.src,
     features: [
       "Quick installation with precast technology.",
       "Designed for heavy traffic load.",
@@ -36,7 +42,7 @@ const projects: ProjectFeature[] = [
     title: "Modern Residential Complex – Solid Foundations",
     description:
       "A contemporary housing development built on our custom concrete pillars, designed to provide structural integrity and safety.",
-    image: projectImg.src,
+    image: bleImage3.src,
     features: [
       "Sustainable and durable materials.",
       "Supports multi-story residential structures.",
@@ -47,7 +53,7 @@ const projects: ProjectFeature[] = [
     title: "Luxury Hotel – Architectural Strength",
     description:
       "A premium hotel project where our high-quality concrete pillars contribute to both structural reliability and modern aesthetics.",
-    image: projectImg.src,
+    image: bleImage4.src,
     features: [
       "Custom-designed for architectural appeal.",
       "Provides long-lasting stability.",
@@ -58,7 +64,7 @@ const projects: ProjectFeature[] = [
     title: "Industrial Warehouse – Heavy-Duty Support",
     description:
       "A high-capacity warehouse supported by our industrial-grade concrete pillars, ensuring long-lasting performance under heavy loads.",
-    image: projectImg.src,
+    image: bleImage5.src,
     features: [
       "Withstands extreme weight and stress.",
       "Fire-resistant and durable materials.",
@@ -69,7 +75,7 @@ const projects: ProjectFeature[] = [
     title: "Sustainable Office Park – Eco-Friendly Innovation",
     description:
       "An environmentally conscious construction using our eco-friendly concrete solutions, reducing carbon footprint without compromising strength.",
-    image: projectImg.src,
+    image: bleImage6.src,
     features: [
       "Uses low-carbon concrete mix.",
       "Energy-efficient and sustainable.",

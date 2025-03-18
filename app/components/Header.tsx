@@ -1,31 +1,40 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowRight } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select"
+import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+} from "@/components/ui/select";
+import { cn } from "@/lib/utils";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
+      setIsScrolled(window.scrollY > 10);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
-      className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", isScrolled ? "py-2" : "py-4")}
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ",
+        isScrolled ? "py-2" : "py-4"
+      )}
       style={{ backgroundColor: isScrolled ? "white" : "transparent" }}
     >
       <div className="container mx-auto px-4">
@@ -37,8 +46,12 @@ export default function Header() {
                 <span className="inline-block mr-1">|||</span>
               </div>
               <div>
-                <div className="font-bold text-lg text-primary">VENADOR PRIM</div>
-                <div className="text-xs uppercase tracking-wider text-secondary">CONCRETE POLES</div>
+                <div className="font-bold text-lg text-primary">
+                  VENADOR PRIM
+                </div>
+                <div className="text-xs uppercase tracking-wider text-secondary">
+                  CONCRETE POLES
+                </div>
               </div>
             </div>
           </Link>
@@ -46,7 +59,9 @@ export default function Header() {
           {/* Desktop Navigation - Centered */}
           <nav className="hidden md:flex items-center justify-center flex-1 mx-4">
             <div className="flex items-center space-x-8">
-              <NavLink href="/">Home</NavLink>
+              <NavLink href="/">
+                Home
+              </NavLink>
               <NavLink href="/about">About</NavLink>
               <NavLink href="/products">Products</NavLink>
               <NavLink href="/services">Services</NavLink>
@@ -120,8 +135,14 @@ export default function Header() {
               </Select>
             </div>
 
-            <Button asChild className="rounded-lg py-5 bg-primary hover:bg-primary/90 text-white">
-              <Link href="/contact" className="flex items-center space-x-2 px-5">
+            <Button
+              asChild
+              className="rounded-lg py-5 bg-primary hover:bg-primary/90 text-white"
+            >
+              <Link
+                href="/contact"
+                className="flex items-center space-x-2 px-5"
+              >
                 <span>Contact</span>
                 <ArrowRight size={16} />
               </Link>
@@ -129,7 +150,10 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          <button
+            className="md:hidden"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
             <div className="space-y-1.5">
               <span className="block h-0.5 w-6 bg-gray-600"></span>
               <span className="block h-0.5 w-6 bg-gray-600"></span>
@@ -162,22 +186,58 @@ export default function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }
 
-function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
+function NavLink({
+  href,
+  children,
+  className,
+}: {
+  href: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
   return (
-    <Link href={href} className="text-base font-medium text-gray-700 hover:text-primary transition-colors">
+    <Link
+      href={href}
+      className={cn(
+        "text-base font-medium transition-colors relative pb-1",
+        isActive
+          ? "text-primary border-b-2 border-primary"
+          : "text-gray-700 hover:text-primary",
+        className
+      )}
+    >
       {children}
     </Link>
-  )
+  );
 }
 
-function MobileNavLink({ href, children }: { href: string; children: React.ReactNode }) {
+function MobileNavLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
   return (
-    <Link href={href} className="text-base font-medium text-gray-700 hover:text-primary transition-colors py-2">
+    <Link
+      href={href}
+      className={cn(
+        "text-base font-medium transition-colors py-2",
+        isActive
+          ? "text-primary border-b-2 border-primary"
+          : "text-gray-700 hover:text-primary"
+      )}
+    >
       {children}
     </Link>
-  )
+  );
 }
-
