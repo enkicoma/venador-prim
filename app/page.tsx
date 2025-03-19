@@ -1,6 +1,13 @@
 import heroImage from "@/public/images/home/home-hero-bg.jpeg";
 import aboutImage from "@/public/images/home/about.jpeg";
 
+import certificate1 from "@/public/images/home/cf-1.png";
+import certificate2 from "@/public/images/home/cf-2.png";
+import certificate3 from "@/public/images/home/cf-3.png";
+import certificate4 from "@/public/images/home/cf-4.png";
+import certificate5 from "@/public/images/home/cf-5.png";
+import certificate6 from "@/public/images/home/cf-6.png";
+
 import HeroSection from "./components/hero-section";
 import ClientsPartnersSection from "./components/home/clients-partners-section";
 import FeatureSection from "./components/feature-section";
@@ -17,6 +24,19 @@ import project2 from "@/public/images/home/project-2.png";
 import project3 from "@/public/images/home/project-3.png";
 import chooseImage from "@/public/images/home/location.png";
 
+const certificationsData = {
+  title: "Certifications",
+  description:
+    "We are committed to upholding the highest industry standards, ensuring that every concrete pillar we produce meets rigorous quality, durability, and safety regulations. Our manufacturing process follows strict compliance measures, using advanced technology and premium materials to guarantee long-lasting strength and performance. With industry-recognized certifications, we demonstrate our dedication to excellence, reliability, and customer satisfaction. Whether for large-scale infrastructure projects or residential developments, our certified concrete solutions provide the foundation for safe and enduring construction.",
+  certifications: [
+    { name: "ISO 9001:2015", image: certificate1.src },
+    { name: "ISO 14001:2015", image: certificate2.src },
+    { name: "ISO 45001:2018", image: certificate3.src },
+    { name: "ISO 14001:2015", image: certificate4.src },
+    { name: "ISO 14001:2015", image: certificate5.src },
+    { name: "ISO 14001:2015", image: certificate6.src },
+  ],
+};
 
 const whoWeAreFeatures = {
   title: "Who We Are",
@@ -66,9 +86,9 @@ const testingProcessSlides = [
     image: project3.src,
     alt: "BridgeLink Express technicians checking specifications",
     title: "BridgeLink Express",
-},
-{
-      image: project1.src,
+  },
+  {
+    image: project1.src,
     alt: "Load testing equipment for concrete pillars",
     title: "Load Testing",
   },
@@ -122,7 +142,7 @@ Standards , Poles"
 
       <ClientsPartnersSection />
 
-      <CertificationsWithText />
+      <CertificationsWithText {...certificationsData} />
 
       <GetInTouchSection />
 

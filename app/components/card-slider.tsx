@@ -1,19 +1,18 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 // Import Swiper and required modules
-import { Swiper, SwiperSlide } from "swiper/react";
 import {
-  Navigation,
-  Pagination,
   A11y,
   Autoplay,
   FreeMode,
+  Navigation,
+  Pagination,
 } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -133,8 +132,16 @@ export default function CardSlider({
                       className="absolute bottom-4 left-4 right-4 rounded-md py-6 px-4"
                       style={{ backdropFilter: "blur(134px)" }}
                     >
-                      {slide.title && <h3 className="font-semibold text-lg text-white">{slide.title}</h3>}
-                      {slide.description && <p className="text-sm text-white/90">{slide.description}</p>}
+                      {slide.title && (
+                        <h3 className="font-semibold text-lg text-white">
+                          {slide.title}
+                        </h3>
+                      )}
+                      {slide.description && (
+                        <p className="text-sm text-white/90">
+                          {slide.description}
+                        </p>
+                      )}
                     </div>
                   )}
                 </div>

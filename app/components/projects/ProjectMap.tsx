@@ -9,8 +9,8 @@ import icon from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
 const defaultIcon = new Icon({
-  iconUrl: icon,
-  shadowUrl: iconShadow,
+  iconUrl: (icon as unknown) as string,
+  shadowUrl: (iconShadow as unknown) as string,
   iconSize: [25, 41],
   iconAnchor: [12, 41],
 });

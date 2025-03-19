@@ -1,11 +1,9 @@
-import Image from "next/image";
-import { Check } from "lucide-react";
-import projectImg from "@/public/images/contact-bg.jpeg";
 import psr1 from "@/public/images/services/psr-1.png";
 import psr2 from "@/public/images/services/psr-2.png";
 import psr3 from "@/public/images/services/psr-3.png";
 import psr4 from "@/public/images/services/psr-4.png";
-import psr5 from "@/public/images/services/psr-5.png";
+import { Check } from "lucide-react";
+import Image from "next/image";
 
 interface ProjectFeature {
   title: string;
