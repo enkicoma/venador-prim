@@ -1,20 +1,20 @@
-"use client";
+'use client';
 
-import type React from "react";
+import type React from 'react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
-} from "@/components/ui/select";
-import { cn } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+} from '@/components/ui/select';
+import { cn } from '@/lib/utils';
+import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,17 +25,17 @@ export default function Header() {
       setIsScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ",
-        isScrolled ? "py-2" : "py-4"
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ',
+        isScrolled ? 'py-2' : 'py-4'
       )}
-      style={{ backgroundColor: isScrolled ? "white" : "transparent" }}
+      style={{ backgroundColor: isScrolled ? 'white' : 'transparent' }}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between rounded-full bg-white py-3 px-6 shadow-sm">
@@ -59,9 +59,7 @@ export default function Header() {
           {/* Desktop Navigation - Centered */}
           <nav className="hidden md:flex items-center justify-center flex-1 mx-4">
             <div className="flex items-center space-x-8">
-              <NavLink href="/">
-                Home
-              </NavLink>
+              <NavLink href="/">Home</NavLink>
               <NavLink href="/about">About</NavLink>
               <NavLink href="/products">Products</NavLink>
               <NavLink href="/services">Services</NavLink>
@@ -205,10 +203,10 @@ function NavLink({
     <Link
       href={href}
       className={cn(
-        "text-base font-medium transition-colors relative pb-1",
+        'text-base font-medium transition-colors relative pb-1',
         isActive
-          ? "text-primary border-b-2 border-primary"
-          : "text-gray-700 hover:text-primary",
+          ? 'text-primary border-b-2 border-primary'
+          : 'text-gray-700 hover:text-primary',
         className
       )}
     >
@@ -231,10 +229,10 @@ function MobileNavLink({
     <Link
       href={href}
       className={cn(
-        "text-base font-medium transition-colors py-2",
+        'text-base font-medium transition-colors py-2',
         isActive
-          ? "text-primary border-b-2 border-primary"
-          : "text-gray-700 hover:text-primary"
+          ? 'text-primary border-b-2 border-primary'
+          : 'text-gray-700 hover:text-primary'
       )}
     >
       {children}
