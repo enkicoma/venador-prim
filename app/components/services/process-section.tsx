@@ -2,10 +2,12 @@
 
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ProcessSection() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -30,21 +32,18 @@ export default function ProcessSection() {
   const steps = [
     {
       number: "01",
-      title: "Consultation & Planning",
-      description:
-        "We begin by understanding your project's unique needs, ensuring we provide the best concrete solutions. Our team works closely with you to develop a plan that aligns with your structural and aesthetic requirements.",
+      title: t("services.process.steps.consultation.title"),
+      description: t("services.process.steps.consultation.description"),
     },
     {
       number: "02",
-      title: "Manufacturing",
-      description:
-        "Using advanced technology and high-quality materials, we manufacture precision-engineered concrete pillars. Each product undergoes strict quality control measures to ensure durability, strength, and compliance with industry standards.",
+      title: t("services.process.steps.manufacturing.title"),
+      description: t("services.process.steps.manufacturing.description"),
     },
     {
       number: "03",
-      title: "Delivery",
-      description:
-        "Our team ensures timely delivery and seamless installation, minimizing disruptions to your project timeline. We provide expert guidance throughout the process, ensuring each pillar is placed with precision and care.",
+      title: t("services.process.steps.delivery.title"),
+      description: t("services.process.steps.delivery.description"),
     },
   ];
 
@@ -58,7 +57,7 @@ export default function ProcessSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           )}
         >
-          Our Process
+          {t("services.process.title")}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">

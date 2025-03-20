@@ -52,7 +52,7 @@ export default function CertificationsWithText({
                 className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow flex items-center justify-center aspect-square"
               >
                 <div className="relative h-full aspect-square">
-                  <Image src={cert.image || "/placeholder.svg"} alt={cert.name} fill className="object-contain w-full" />
+                  <Image src={cert.image || "/placeholder.svg"} alt={cert.name} width={300} height={300} className="object-contain w-full" />
                 </div>
               </div>
             ))}

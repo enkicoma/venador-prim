@@ -1,44 +1,45 @@
-import heroImage from "@/public/images/products/product-hero-bg.jpeg";
+"use client";
+
 import chooseImage from "@/public/images/products/choose-product.jpeg";
+import heroImage from "@/public/images/products/product-hero-bg.jpeg";
+import { useTranslation } from "react-i18next";
+import FeatureSection from "../components/feature-section";
 import HeroSection from "../components/hero-section";
 import ProductRange from "../components/products/product-range";
-import FeatureSection from "../components/feature-section";
 
-const whyChooseUsFeatures = {
-  title: "Why Choose Our Products?",
-  description:
-    "At Venador Prime, we go beyond just manufacturing concrete pillars—we provide solutions that enhance durability, safety, and efficiency in construction. Here's why our products stand out",
-  features: [
-    {
-      title: "Superior Durability",
-      description:
-        "Our concrete pillars are built to withstand extreme conditions and long-term use.",
-    },
-    {
-      title: "Precision Engineering",
-      description:
-        "We use advanced techniques to ensure consistency and structural integrity.",
-    },
-    {
-      title: "Fast & Reliable Delivery",
-      description:
-        "With efficient logistics, we ensure timely delivery to your project site.",
-    },
-  ],
-  image: chooseImage.src,
-};
+export default function ProductsPage() {
+  const { t } = useTranslation();
 
-export default function ContactPage() {
+  const whyChooseUsFeatures = {
+    title: t("products.whyChoose.title"),
+    description: t("products.whyChoose.description"),
+    features: [
+      {
+        title: t("products.whyChoose.features.durability.title"),
+        description: t("products.whyChoose.features.durability.description"),
+      },
+      {
+        title: t("products.whyChoose.features.engineering.title"),
+        description: t("products.whyChoose.features.engineering.description"),
+      },
+      {
+        title: t("products.whyChoose.features.delivery.title"),
+        description: t("products.whyChoose.features.delivery.description"),
+      },
+    ],
+    image: chooseImage.src,
+  };
+
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <HeroSection
-        title="Our Products"
-        description="At Venador Prime, we offer a range of high-quality concrete pillars and structural solutions to meet diverse construction needs. Engineered with precision and durability."
+        title={t("products.hero.title")}
+        description={t("products.hero.description")}
         backgroundImage={heroImage.src}
       />
       <div className="pt-24 pb-32">
         <ProductRange />
-        <FeatureSection {...whyChooseUsFeatures} />
+        <FeatureSection buttonLink="/contact" buttonText={t("products.range.buttonText")} {...whyChooseUsFeatures} />
       </div>
     </div>
   );

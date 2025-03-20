@@ -1,50 +1,52 @@
+"use client";
+
 import heroImage from "@/public/images/about/about-hero-bg.jpeg";
 import astImg from "@/public/images/about/ast-image.jpeg";
-import ManufacturingFeatures from "../components/about/manufacturing-features";
-import HeroSection from "../components/hero-section";
+import { useTranslation } from "react-i18next";
 import CoreValues from "../components/about/core-values";
+import ManufacturingFeatures from "../components/about/manufacturing-features";
 import FeatureSection from "../components/feature-section";
+import HeroSection from "../components/hero-section";
 
 import mfc1 from "@/public/images/about/mfc-1.png";
 import mfc2 from "@/public/images/about/mfc-2.png";
 import mfc3 from "@/public/images/about/mfc-3.png";
 
+export default function AboutPage() {
+  const { t } = useTranslation();
 
-const whyChooseUsFeatures = {
-    title: "Advanced Superior Technology",
-    description:
-      "At Venador Prime, our mission is to provide cutting-edge concrete solutions that redefine durability and structural integrity. We strive to deliver superior craftsmanship, innovative designs, and sustainable building solutions that exceed industry standards. Our commitment to quality and customer satisfaction drives us to create pillars that form the foundation of strong, resilient structures.",
+  const whyChooseUsFeatures = {
+    title: t("about.advancedTechnology.title"),
+    description: t("about.advancedTechnology.description"),
     image: astImg.src,
   };
 
-const manufacturingFeatures = {
-  title: "We Are a Manufacturing Company",
-  features: [
-    {
-      title: "Proven Expertise",
-      description:
-        "Years of experience in manufacturing durable concrete pillars.",
-      image: mfc1.src,
-    },
-    {
-      title: "Top-Quality Materials",
-      description: "Ensuring maximum strength and longevity.",
-      image: mfc2.src,
-    },
-    {
-      title: "Precision Engineering",
-      description: "Designed to meet industry standards with accuracy.",
-      image: mfc3.src,
-    },
-  ],
-};
+  const manufacturingFeatures = {
+    title: t("about.manufacturing.title"),
+    features: [
+      {
+        title: t("about.manufacturing.features.expertise.title"),
+        description: t("about.manufacturing.features.expertise.description"),
+        image: mfc1.src,
+      },
+      {
+        title: t("about.manufacturing.features.materials.title"),
+        description: t("about.manufacturing.features.materials.description"),
+        image: mfc2.src,
+      },
+      {
+        title: t("about.manufacturing.features.engineering.title"),
+        description: t("about.manufacturing.features.engineering.description"),
+        image: mfc3.src,
+      },
+    ],
+  };
 
-export default function ContactPage() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <HeroSection
-        title="About Us"
-        description="At Venador Prime, we specialize in manufacturing high-quality concrete pillars that provide strength, durability, and reliability for all types of construction projects."
+        title={t("about.hero.title")}
+        description={t("about.hero.description")}
         backgroundImage={heroImage.src}
       />
       <div className="">

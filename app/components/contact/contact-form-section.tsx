@@ -1,12 +1,13 @@
-"use client"
+"use client";
 
-import type React from "react"
-
-import { useState } from "react"
-import { ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import type React from "react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ContactFormSection() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     lastname: "",
@@ -14,32 +15,34 @@ export default function ContactFormSection() {
     telephone: "",
     subject: "",
     message: "",
-  })
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission
-    console.log("Form submitted:", formData)
-  }
+    console.log("Form submitted:", formData);
+  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
-    }))
-  }
+    }));
+  };
 
   return (
     <section className="w-full py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-bold mb-4" style={{ color: "#1B3B47" }}>
-            Send Us a Message
+            {t("contact.form.title")}
           </h2>
-          <p className="text-gray-600">
-            Have a project in mind? Fill out the form below, and our team will get back to you as soon as possible.
-          </p>
+          <p className="text-gray-600">{t("contact.form.description")}</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -52,7 +55,7 @@ export default function ContactFormSection() {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg border border-primary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition"
-                placeholder="Name *"
+                placeholder={t("contact.form.name")}
                 required
               />
               {/* <span className="absolute text-red-500 text-sm top-3 -right-3">*</span> */}
@@ -64,7 +67,7 @@ export default function ContactFormSection() {
                 value={formData.lastname}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg border border-primary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition"
-                placeholder="Lastname *"
+                placeholder={t("contact.form.lastname")}
                 required
               />
               {/* <span className="absolute text-red-500 text-sm top-3 -right-3">*</span> */}
@@ -80,7 +83,7 @@ export default function ContactFormSection() {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg border border-primary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition"
-                placeholder="E-Mail Address *"
+                placeholder={t("contact.form.email")}
                 required
               />
               {/* <span className="absolute text-red-500 text-sm top-3 -right-3">*</span> */}
@@ -92,7 +95,7 @@ export default function ContactFormSection() {
                 value={formData.telephone}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg border border-primary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition"
-                placeholder="Telephone *"
+                placeholder={t("contact.form.telephone")}
                 required
               />
               {/* <span className="absolute text-red-500 text-sm top-3 -right-3">*</span> */}
@@ -108,16 +111,30 @@ export default function ContactFormSection() {
               className="w-full px-4 py-3 rounded-lg border border-primary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition appearance-none bg-white"
             >
               <option value="" disabled>
-                Subject
+                {t("contact.form.subject")}
               </option>
-              <option value="general">General Inquiry</option>
-              <option value="support">Technical Support</option>
-              <option value="sales">Sales</option>
-              <option value="other">Other</option>
+              <option value="general">
+                {t("contact.form.subjects.general")}
+              </option>
+              <option value="support">
+                {t("contact.form.subjects.support")}
+              </option>
+              <option value="sales">{t("contact.form.subjects.sales")}</option>
+              <option value="other">{t("contact.form.subjects.other")}</option>
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-              <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              <svg
+                className="w-4 h-4 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </div>
           </div>
@@ -130,7 +147,7 @@ export default function ContactFormSection() {
               onChange={handleChange}
               rows={6}
               className="w-full px-4 py-3 rounded-lg border border-primary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition resize-none"
-              placeholder="Message"
+              placeholder={t("contact.form.message")}
             />
           </div>
 
@@ -141,13 +158,12 @@ export default function ContactFormSection() {
               className="inline-flex items-center px-6 py-6 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors"
               style={{ backgroundColor: "#1B3B47" }}
             >
-              <span className="mr-2">Submit Now</span>
+              <span className="mr-2">{t("contact.form.submit")}</span>
               <ArrowRight size={20} />
             </Button>
           </div>
         </form>
       </div>
     </section>
-  )
+  );
 }
-

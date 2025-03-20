@@ -1,14 +1,19 @@
-import heroImage from "@/public/images/services/services-hero-bg.jpeg";
-import HeroSection from "../components/hero-section";
-import ServicesShowcase from "../components/services/services-showcase";
-import ProcessSection from "../components/services/process-section";
+"use client";
 
-export default function ContactPage() {
+import heroImage from "@/public/images/services/services-hero-bg.jpeg";
+import { useTranslation } from "react-i18next";
+import HeroSection from "../components/hero-section";
+import ProcessSection from "../components/services/process-section";
+import ServicesShowcase from "../components/services/services-showcase";
+
+export default function ServicesPage() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <HeroSection
-        title="Our Services"
-        description="At Venador Prime, we provide top-tier concrete pillar solutions designed to meet the highest industry standards. Our expertise ensures durability, precision, and strength for a wide range of construction projects."
+        title={t("services.hero.title")}
+        description={t("services.hero.description")}
         backgroundImage={heroImage.src}
       />
       <div className="pt-24 pb-32">

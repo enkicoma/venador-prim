@@ -25,8 +25,8 @@ export default function FeatureSection({
   description,
   features,
   image,
-  buttonText = "Contact us",
-  buttonLink = "/contact",
+  buttonText = "",
+  buttonLink = "",
   className = "",
   reverse = false,
 }: FeatureSectionProps) {
@@ -91,8 +91,9 @@ export default function FeatureSection({
                   <Image
                     src={(image as unknown as string) || "/placeholder.svg"}
                     alt={`Feature image `}
-                    fill
-                    className="object-cover"
+                    height={300}
+                    width={300}
+                    className="object-cover w-full h-full"
                   />
                 </div>
               </div>

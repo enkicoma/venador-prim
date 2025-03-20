@@ -1,5 +1,7 @@
 import { Facebook, Linkedin } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import logo from "@/public/logo-white.svg";
 
 export default function Footer() {
   return (
@@ -9,15 +11,13 @@ export default function Footer() {
           {/* Logo */}
           <div className="mb-8">
             <div className="flex items-center text-white">
-              <div className="font-bold mr-2">
-                <span className="inline-block mr-1">|||</span>
-              </div>
-              <div>
-                <div className="font-bold text-xl tracking-wider">
-                  VENADOR PRIM
-                </div>
-                <div className="text-sm tracking-widest">CONCRETE POLES</div>
-              </div>
+              <Image
+                width={200}
+                height={200}
+                src={logo}
+                alt="Venador Prim Logo"
+                className="w-auto h-[30px] md:h-[38px]"
+              />
             </div>
           </div>
 

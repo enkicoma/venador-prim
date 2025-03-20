@@ -1,23 +1,26 @@
-import { Landmark, HardHat, Truck } from "lucide-react";
+"use client";
+
+import { HardHat, Landmark, Truck } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function OurServices() {
+  const { t } = useTranslation();
+
   const values = [
     {
       icon: Landmark,
-      title: "Custom Concrete Pillars",
-      description: "Engineered to perfection for any construction project.",
+      title: t("home.services.items.customPillars.title"),
+      description: t("home.services.items.customPillars.description"),
     },
     {
       icon: HardHat,
-      title: "Project Consulting",
-      description:
-        "Expert guidance to ensure your project meets structural requirements.",
+      title: t("home.services.items.consulting.title"),
+      description: t("home.services.items.consulting.description"),
     },
     {
       icon: Truck,
-      title: "Transport & Logistics",
-      description:
-        "Safe and timely delivery of concrete pillars to your project site.",
+      title: t("home.services.items.transport.title"),
+      description: t("home.services.items.transport.description"),
     },
   ];
 
@@ -25,7 +28,7 @@ export default function OurServices() {
     <section className="w-full bg-gray-50 py-16 md:py-24">
       <div className="container px-4 md:px-6 mx-auto">
         <h2 className="text-center text-3xl font-bold tracking-tight text-[#1a3b4b] sm:text-4xl md:text-5xl">
-          Our Core Values
+          {t("home.services.title")}
         </h2>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {values.map((value, index) => (

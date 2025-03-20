@@ -27,7 +27,7 @@ export default function ManufacturingFeatures({
             <div key={index} className="flex flex-col p-4 rounded-[10px]" style={{boxShadow: "0px 0px 10px 0px #0000001A"}}>
               {/* Image Container */}
               <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
-                <Image src={feature.image || "/placeholder.svg"} alt={feature.title} fill className="object-cover" />
+                <Image src={feature.image || "/placeholder.svg"} alt={feature.title} width={300} height={300} className="object-cover w-full h-full" />
               </div>
 
               {/* Content */}

@@ -122,7 +122,7 @@ export default function CardSlider({
                   <Image
                     src={slide.image || "/placeholder.svg"}
                     alt={slide.alt}
-                    width={600}
+                    width={400}
                     height={400}
                     className="w-full h-full object-cover"
                   />

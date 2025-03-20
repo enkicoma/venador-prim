@@ -1,12 +1,13 @@
 "use client";
 
-import type React from "react";
-import { Mail, MapPin, Phone } from "lucide-react";
-import { useState } from "react";
-import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
+import type React from "react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function GetInTouchSection() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     lastname: "",
@@ -39,12 +40,9 @@ export default function GetInTouchSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-bold mb-4" style={{ color: "#1B3B47" }}>
-            Send Us a Message
+            {t("contact.form.title")}
           </h2>
-          <p className="text-gray-600">
-            Have a project in mind? Fill out the form below, and our team will
-            get back to you as soon as possible.
-          </p>
+          <p className="text-gray-600">{t("contact.form.description")}</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -59,7 +57,7 @@ export default function GetInTouchSection() {
               </div>
               <div>
                 <p className="text-lg text-gray-700">
-                  123 Concrete Avenue, Build City, BC 45678
+                  {t("contact.office.address")}
                 </p>
               </div>
             </div>
@@ -76,7 +74,7 @@ export default function GetInTouchSection() {
                   href="tel:+15551234567"
                   className="text-lg text-gray-700 hover:text-primary transition-colors"
                 >
-                  +1 (555) 123-4567
+                  {t("contact.office.phone")}
                 </a>
               </div>
             </div>
@@ -93,7 +91,7 @@ export default function GetInTouchSection() {
                   href="mailto:info@concretepillarco.com"
                   className="text-lg text-gray-700 hover:text-primary transition-colors"
                 >
-                  info@concretepillarco.com
+                  {t("contact.office.email")}
                 </a>
               </div>
             </div>
@@ -111,10 +109,9 @@ export default function GetInTouchSection() {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-primary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition"
-                    placeholder="Name *"
+                    placeholder={t("contact.form.name")}
                     required
                   />
-                  {/* <span className="absolute text-red-500 text-sm top-3 -right-3">*</span> */}
                 </div>
                 <div className="relative">
                   <input
@@ -123,10 +120,9 @@ export default function GetInTouchSection() {
                     value={formData.lastname}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-primary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition"
-                    placeholder="Lastname *"
+                    placeholder={t("contact.form.lastname")}
                     required
                   />
-                  {/* <span className="absolute text-red-500 text-sm top-3 -right-3">*</span> */}
                 </div>
               </div>
 
@@ -139,10 +135,9 @@ export default function GetInTouchSection() {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-primary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition"
-                    placeholder="E-Mail Address *"
+                    placeholder={t("contact.form.email")}
                     required
                   />
-                  {/* <span className="absolute text-red-500 text-sm top-3 -right-3">*</span> */}
                 </div>
                 <div className="relative">
                   <input
@@ -151,10 +146,9 @@ export default function GetInTouchSection() {
                     value={formData.telephone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-primary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition"
-                    placeholder="Telephone *"
+                    placeholder={t("contact.form.telephone")}
                     required
                   />
-                  {/* <span className="absolute text-red-500 text-sm top-3 -right-3">*</span> */}
                 </div>
               </div>
 
@@ -166,7 +160,7 @@ export default function GetInTouchSection() {
                   onChange={handleChange}
                   rows={6}
                   className="w-full px-4 py-3 rounded-lg border border-primary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition resize-none"
-                  placeholder="Message"
+                  placeholder={t("contact.form.message")}
                 />
               </div>
 
@@ -177,7 +171,7 @@ export default function GetInTouchSection() {
                   className="inline-flex items-center px-6 py-6 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors"
                   style={{ backgroundColor: "#1B3B47" }}
                 >
-                  <span className="mr-2">Submit Now</span>
+                  <span className="mr-2">{t("contact.form.submit")}</span>
                   <ArrowRight size={20} />
                 </Button>
               </div>
