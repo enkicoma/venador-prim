@@ -1,0 +1,58 @@
+import { Facebook, Linkedin } from "lucide-react";
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="bg-[#1B1B1B] py-12">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center">
+          {/* Logo */}
+          <div className="mb-8">
+            <div className="flex items-center text-white">
+              <div className="font-bold mr-2">
+                <span className="inline-block mr-1">|||</span>
+              </div>
+              <div>
+                <div className="font-bold text-xl tracking-wider">
+                  VENADOR PRIM
+                </div>
+                <div className="text-sm tracking-widest">CONCRETE POLES</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Social Media Icons */}
+          <div className="flex items-center space-x-4 mb-8">
+            <Link
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
+            >
+              <Facebook className="w-5 h-5 text-[#1B1B1B]" />
+              <span className="sr-only">Facebook</span>
+            </Link>
+            <Link
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
+            >
+              <Linkedin className="w-5 h-5 text-[#1B1B1B]" />
+              <span className="sr-only">LinkedIn</span>
+            </Link>
+          </div>
+
+          {/* Divider */}
+          <div className="w-full h-px bg-white/50 mb-8"></div>
+
+          {/* Copyright */}
+          <div className="text-gray-400 text-sm text-center">
+            © {new Date().getFullYear()} Concrete Pillar Co. | All Rights
+            Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
