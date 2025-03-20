@@ -1,85 +1,56 @@
-"use client";
+'use client';
 
-import { Icon } from "leaflet";
-import "leaflet/dist/leaflet.css";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-
-// Fix for default marker icon
-import icon from "leaflet/dist/images/marker-icon.png";
-import iconShadow from "leaflet/dist/images/marker-shadow.png";
-
-const defaultIcon = new Icon({
-//   iconUrl: (icon as unknown) as string,
-//   shadowUrl: (iconShadow as unknown) as string,
-  iconUrl: icon.src,
-  shadowUrl: iconShadow.src,
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-});
+import dynamic from 'next/dynamic';
+import { type Location } from './Map';
 
 // Sample locations in Boston area
-const locations = [
+const locations: Location[] = [
   {
     id: 1,
-    name: "Harvard University",
-    position: [42.377, -71.1167],
-    description: "Prestigious university in Cambridge",
+    name: 'Harvard University',
+    position: [42.377, -71.1167] as [number, number],
+    description: 'Prestigious university in Cambridge',
   },
   {
     id: 2,
-    name: "Fenway Park",
-    position: [42.3467, -71.0972],
-    description: "Historic baseball park",
+    name: 'Fenway Park',
+    position: [42.3467, -71.0972] as [number, number],
+    description: 'Historic baseball park',
   },
   {
     id: 3,
-    name: "Boston Common",
-    position: [42.3554, -71.0655],
+    name: 'Boston Common',
+    position: [42.3554, -71.0655] as [number, number],
     description: "America's oldest public park",
   },
   {
     id: 4,
-    name: "MIT",
-    position: [42.3601, -71.0942],
-    description: "Massachusetts Institute of Technology",
+    name: 'MIT',
+    position: [42.3601, -71.0942] as [number, number],
+    description: 'Massachusetts Institute of Technology',
   },
   {
     id: 5,
-    name: "New England Aquarium",
-    position: [42.3592, -71.0495],
-    description: "Marine life and exhibits",
+    name: 'New England Aquarium',
+    position: [42.3592, -71.0495] as [number, number],
+    description: 'Marine life and exhibits',
   },
 ];
+
+// Dynamically import the Map component with all its dependencies
+const Map = dynamic(() => import('./Map'), {
+  ssr: false,
+  loading: () => (
+    <div className="min-h-[400px] bg-gray-100 animate-pulse rounded-lg" />
+  ),
+});
 
 function ProjectMap() {
   return (
     <div className="min-h-[400px]">
       <div className="p-4 mx-auto container">
         <div className="h-[400px] md:h-[600px] rounded-lg overflow-hidden shadow-xl">
-          <MapContainer
-            center={[42.3601, -71.0589]}
-            zoom={13}
-            style={{ height: "100%", width: "100%" }}
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            {locations.map((location) => (
-              <Marker
-                key={location.id}
-                position={location.position as [number, number]}
-                icon={defaultIcon}
-              >
-                <Popup>
-                  <div className="p-2">
-                    <h3 className="font-bold text-lg">{location.name}</h3>
-                    <p className="text-gray-600">{location.description}</p>
-                  </div>
-                </Popup>
-              </Marker>
-            ))}
-          </MapContainer>
+          <Map locations={locations} />
         </div>
       </div>
     </div>

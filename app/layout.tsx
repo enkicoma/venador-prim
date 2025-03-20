@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Footer from "./components/footer";
-import Header from "./components/header";
-import { LanguageProvider } from "./contexts/LanguageContext";
-import "./globals.css";
-import "./i18n/client";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import Footer from './components/footer';
+import Header from './components/header';
+import { LanguageProvider } from './contexts/LanguageContext';
+import './globals.css';
+import './i18n/client';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Venador Prim",
-  description: "Venador Prim - Your Trusted Partner in Industrial Solutions",
+  title: 'Venador Prim',
+  description: 'Venador Prim - Your Trusted Partner in Industrial Solutions',
 };
 
 export default function RootLayout({

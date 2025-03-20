@@ -1,31 +1,31 @@
-"use client";
+'use client';
 
-import { useLanguage } from "@/app/contexts/LanguageContext";
-import type React from "react";
-import { useTranslation } from "react-i18next";
+import { useLanguage } from '@/app/contexts/LanguageContext';
+import type React from 'react';
+import { useTranslation } from 'react-i18next';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
-} from "@/components/ui/select";
-import { cn } from "@/lib/utils";
-import enImg from "@/public/en.jpg";
-import logo from "@/public/logo-color.svg";
-import roImg from "@/public/roman.png";
-import ruImg from "@/public/russia.jpg";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+} from '@/components/ui/select';
+import { cn } from '@/lib/utils';
+import enImg from '@/public/en.jpg';
+import logo from '@/public/logo-color.svg';
+import roImg from '@/public/roman.png';
+import ruImg from '@/public/russia.jpg';
+import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 const languages = [
-  { value: "en", label: "English", img: enImg },
-  { value: "ro", label: "Romanian", img: roImg },
-  { value: "ru", label: "Russian", img: ruImg },
+  { value: 'en', label: 'English', img: enImg },
+  { value: 'ro', label: 'Romanian', img: roImg },
+  { value: 'ru', label: 'Russian', img: ruImg },
 ];
 
 export default function Header() {
@@ -33,15 +33,22 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
   const { currentLanguage, changeLanguage } = useLanguage();
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isMounted]);
 
   const handleLanguageChange = (value: string) => {
     changeLanguage(value);
@@ -50,10 +57,10 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ",
-        isScrolled ? "py-2" : "py-4"
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ',
+        isScrolled ? 'py-2' : 'py-4'
       )}
-      style={{ backgroundColor: isScrolled ? "white" : "transparent" }}
+      style={{ backgroundColor: isScrolled ? 'white' : 'transparent' }}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between rounded-full bg-white py-3 px-6 shadow-sm">
@@ -72,12 +79,32 @@ export default function Header() {
           {/* Desktop Navigation - Centered */}
           <nav className="hidden md:flex items-center justify-center flex-1 mx-4">
             <div className="flex items-center space-x-8">
-              <NavLink href="/" onClick={()=>setIsMobileMenuOpen(false)}>{t("navigation.home")}</NavLink>
-              <NavLink href="/products" onClick={()=>setIsMobileMenuOpen(false)}>{t("navigation.products")}</NavLink>
-              <NavLink href="/services" onClick={()=>setIsMobileMenuOpen(false)}>{t("navigation.services")}</NavLink>
-              <NavLink href="/projects" onClick={()=>setIsMobileMenuOpen(false)}>{t("navigation.projects")}</NavLink>
-              <NavLink href="/certificates" onClick={()=>setIsMobileMenuOpen(false)}>
-                {t("navigation.certificates")}
+              <NavLink href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                {t('navigation.home')}
+              </NavLink>
+              <NavLink
+                href="/products"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('navigation.products')}
+              </NavLink>
+              <NavLink
+                href="/services"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('navigation.services')}
+              </NavLink>
+              <NavLink
+                href="/projects"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('navigation.projects')}
+              </NavLink>
+              <NavLink
+                href="/certificates"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('navigation.certificates')}
               </NavLink>
             </div>
           </nav>
@@ -135,9 +162,9 @@ export default function Header() {
               <Link
                 href="/contact"
                 className="flex items-center space-x-2 px-5"
-                onClick={()=>setIsMobileMenuOpen(false)}
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                <span>{t("navigation.contact")}</span>
+                <span>{t('navigation.contact')}</span>
                 <ArrowRight size={16} />
               </Link>
             </Button>
@@ -160,25 +187,46 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-2 rounded-lg bg-white shadow-lg p-4">
             <nav className="flex flex-col space-y-4 text-center">
-              <MobileNavLink href="/" onClick={()=>setIsMobileMenuOpen(false)}>{t("navigation.home")}</MobileNavLink>
-              <MobileNavLink href="/products" onClick={()=>setIsMobileMenuOpen(false)}>
-                {t("navigation.products")}
+              <MobileNavLink
+                href="/"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('navigation.home')}
               </MobileNavLink>
-              <MobileNavLink href="/services" onClick={()=>setIsMobileMenuOpen(false)}>
-                {t("navigation.services")}
+              <MobileNavLink
+                href="/products"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('navigation.products')}
               </MobileNavLink>
-              <MobileNavLink href="/projects" onClick={()=>setIsMobileMenuOpen(false)}>
-                {t("navigation.projects")}
+              <MobileNavLink
+                href="/services"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('navigation.services')}
               </MobileNavLink>
-              <MobileNavLink href="/certificates" onClick={()=>setIsMobileMenuOpen(false)}>
-                {t("navigation.certificates")}
+              <MobileNavLink
+                href="/projects"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('navigation.projects')}
+              </MobileNavLink>
+              <MobileNavLink
+                href="/certificates"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('navigation.certificates')}
               </MobileNavLink>
               <Button
                 asChild
                 className="py-5 w-full justify-center rounded-lg mt-2 bg-primary hover:bg-primary/90 text-white"
               >
-                <Link href="/contact" className="flex items-center space-x-2" onClick={()=>setIsMobileMenuOpen(false)}>
-                  <span>{t("navigation.contact")}</span>
+                <Link
+                  href="/contact"
+                  className="flex items-center space-x-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span>{t('navigation.contact')}</span>
                   <ArrowRight size={16} />
                 </Link>
               </Button>
@@ -208,10 +256,10 @@ function NavLink({
     <Link
       href={href}
       className={cn(
-        "text-base font-medium transition-colors relative pb-1",
+        'text-base font-medium transition-colors relative pb-1',
         isActive
-          ? "text-primary border-b-2 border-primary"
-          : "text-gray-700 hover:text-primary",
+          ? 'text-primary border-b-2 border-primary'
+          : 'text-gray-700 hover:text-primary',
         className
       )}
       onClick={onClick}
@@ -237,10 +285,10 @@ function MobileNavLink({
     <Link
       href={href}
       className={cn(
-        "text-base font-medium transition-colors py-2",
+        'text-base font-medium transition-colors py-2',
         isActive
-          ? "text-primary border-b-2 border-primary"
-          : "text-gray-700 hover:text-primary"
+          ? 'text-primary border-b-2 border-primary'
+          : 'text-gray-700 hover:text-primary'
       )}
       onClick={onClick}
     >
