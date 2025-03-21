@@ -23,9 +23,9 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 const languages = [
-  { value: 'en', label: 'English', img: enImg },
   { value: 'ro', label: 'Romanian', img: roImg },
   { value: 'ru', label: 'Russian', img: ruImg },
+  { value: 'en', label: 'English', img: enImg },
 ];
 
 export default function Header() {
@@ -129,7 +129,7 @@ export default function Header() {
                         alt="Language Flag"
                         width={24}
                         height={24}
-                        className="object-cover"
+                        className="object-cover object-center h-full"
                       />
                     </div>
                   </div>
@@ -144,7 +144,7 @@ export default function Header() {
                             alt={t(`languages.${language.value}`)}
                             width={16}
                             height={16}
-                            className="object-cover"
+                            className="object-cover object-center h-full "
                           />
                         </div>
                         <span>{t(`languages.${language.value}`)}</span>
