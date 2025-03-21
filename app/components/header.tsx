@@ -14,8 +14,8 @@ import {
 import { cn } from '@/lib/utils';
 import enImg from '@/public/en.jpg';
 import logo from '@/public/logo-color.svg';
-import roImg from '@/public/roman.png';
-import ruImg from '@/public/russia.jpg';
+import roImg from '@/public/romania.png';
+import ruImg from '@/public/russia.png';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -119,7 +119,7 @@ export default function Header() {
               >
                 <SelectTrigger className="flex items-center h-10 space-x-1 rounded-full border border-gray-200 pl-1 pr-2 min-w-[60px] bg-transparent">
                   <div className="flex items-center gap-1">
-                    <div className="relative h-6 w-6 overflow-hidden rounded-full">
+                    <div className="relative h-6 w-6 overflow-hidden rounded-full shadow-xl border border-gray-400">
                       <Image
                         src={
                           languages.find(
@@ -138,7 +138,7 @@ export default function Header() {
                   {languages.map((language, i) => (
                     <SelectItem key={i} value={language.value}>
                       <div className="flex items-center gap-2 cursor-pointer">
-                        <div className="relative h-4 w-4 overflow-hidden rounded-full">
+                        <div className="relative h-4 w-4 overflow-hidden   rounded-full shadow-xl border border-gray-400 ">
                           <Image
                             src={language.img}
                             alt={t(`languages.${language.value}`)}
