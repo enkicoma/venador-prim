@@ -58,7 +58,7 @@ export default function OfficeLocationSection() {
               </div>
               <div>
                 <a
-                  href="mailto:info@concretepillarco.com"
+                  href="mailto:info@venadorprim.com"
                   className="text-lg text-gray-700 hover:text-primary transition-colors"
                 >
                   {t("contact.office.email")}

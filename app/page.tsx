@@ -1,6 +1,6 @@
 "use client";
 
-import aboutImage from "@/public/images/home/about.jpeg";
+import aboutImage from "@/public/images/home/about.jpg";
 import heroImage from "@/public/images/home/home-hero-bg.jpeg";
 
 import certificate1 from "@/public/images/home/cf-1.png";

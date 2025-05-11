@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-gray-400 text-sm text-center">
-            © {new Date().getFullYear()} Concrete Pillar Co. | All Rights
+            © {new Date().getFullYear()} Venador Prim SRL | All Rights
             Reserved.
           </div>
         </div>
