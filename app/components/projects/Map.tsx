@@ -27,8 +27,8 @@ const defaultIcon = new Icon({
 const Map = ({ locations }: MapProps) => {
   return (
     <MapContainer
-      center={[42.3601, -71.0589]}
-      zoom={13}
+      center={[54.5260, 15.2551]}
+      zoom={5}
       style={{ height: '100%', width: '100%' }}
     >
       <TileLayer

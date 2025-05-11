@@ -12,7 +12,7 @@ interface CTABannerProps {
 
 export default function CTABanner({
   title = "Build with Strength, Build with Confidence!",
-  description = "Looking for high-quality concrete pillars for your next project? Partner with us for durable, reliable, and expertly crafted solutions.",
+  description = "Looking for high-quality concrete poles for your next project? Partner with us for durable, reliable, and expertly crafted solutions.",
   buttonText = "Contact Us",
   buttonLink = "/contact",
   showButton = false,

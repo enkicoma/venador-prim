@@ -1,16 +1,16 @@
 "use client";
 
-import heroImage from "@/public/images/about/about-hero-bg.jpeg";
-import astImg from "@/public/images/about/ast-image.jpeg";
+import heroImage from "@/public/images/about/about-hero-bg.jpg";
+import astImg from "@/public/images/about/ast-image.jpg";
 import { useTranslation } from "react-i18next";
 import CoreValues from "../components/about/core-values";
 import ManufacturingFeatures from "../components/about/manufacturing-features";
 import FeatureSection from "../components/feature-section";
 import HeroSection from "../components/hero-section";
 
-import mfc1 from "@/public/images/about/mfc-1.png";
-import mfc2 from "@/public/images/about/mfc-2.png";
-import mfc3 from "@/public/images/about/mfc-3.png";
+import mfc1 from "@/public/images/about/mfc-1.jpg";
+import mfc2 from "@/public/images/about/mfc-2.jpg";
+import mfc3 from "@/public/images/about/mfc-3.jpg";
 
 export default function AboutPage() {
   const { t } = useTranslation();

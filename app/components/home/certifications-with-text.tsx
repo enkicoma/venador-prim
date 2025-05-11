@@ -20,7 +20,7 @@ interface CertificationsWithTextProps {
 
 export default function CertificationsWithText({
   title = "Certifications",
-  description = "We are committed to upholding the highest industry standards, ensuring that every concrete pillar we produce meets rigorous quality, durability, and safety regulations. Our manufacturing process follows strict compliance measures, using advanced technology and premium materials to guarantee long-lasting strength and performance. With industry-recognized certifications, we demonstrate our dedication to excellence, reliability, and customer satisfaction. Whether for large-scale infrastructure projects or residential developments, our certified concrete solutions provide the foundation for safe and enduring construction.",
+  description = "We are committed to upholding the highest industry standards, ensuring that every concrete poles we produce meets rigorous quality, durability, and safety regulations. Our manufacturing process follows strict compliance measures, using advanced technology and premium materials to guarantee long-lasting strength and performance. With industry-recognized certifications, we demonstrate our dedication to excellence, reliability, and customer satisfaction. Whether for large-scale infrastructure projects or residential developments, our certified concrete solutions provide the foundation for safe and enduring construction.",
   certifications = [
     {name: "ISO 9001:2015", image: certificate1.src},
     {name: "ISO 14001:2015", image: certificate2.src},
