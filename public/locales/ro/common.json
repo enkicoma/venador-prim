@@ -332,49 +332,16 @@
     },
     "certifications": {
       "title": "Certificatele Noastre",
-      "description": "La Venador Prim, aderăm la cele mai înalte standarde din industrie, asigurându-ne că stâlpii noștri de beton îndeplinesc reglementările stricte de calitate, durabilitate și siguranță. Certificatele noastre reflectă angajamentul nostru față de excelență, fiabilitate și măiestrie superioară în construcții.",
+      "description": "La Venador Prim, respectăm cele mai înalte standarde din industria prefabricatelor, asigurându-ne că fiecare stâlp produs îndeplinește cerințele stricte de calitate, durabilitate și siguranță. Certificatele noastre atestă conformitatea cu reglementările naționale și internaționale în domeniul construcțiilor EN 12843:2004, calitatea materialelor și a procesului de fabricație, fiabilitatea produselor în condiții extreme de exploatare, angajamentul nostru față de excelență tehnică și sustenabilitate. Alege siguranța alege Venador Prim.",
       "iso": {
-        "name": "ISO 9001:2015"
-      },
-      "ceMark": {
-        "name": "Marcă CE"
-      },
-      "excellence": {
-        "name": "Premii pentru Excelență în Industrie"
-      },
-      "leed": {
-        "name": "Certificare LEED"
-      },
-      "usgbc": {
-        "name": "Consiliul American pentru Clădiri Verzi"
-      },
-      "trustedSeller": {
-        "name": "Vânzător de Încredere"
-      },
-      "trusted": {
-        "name": "100% De Încredere"
-      },
-      "astm": {
-        "name": "ASTM International"
-      },
-      "aci": {
-        "name": "Certificare ACI"
-      },
-      "bba": {
-        "name": "BBA"
-      },
-      "igbc": {
-        "name": "Membru IGBC"
-      },
-      "usgbcLeed": {
-        "name": "USGBC LEED"
+        "name": "EN 12843:2004"
       }
     }
   },
   "contact": {
     "hero": {
       "title": "Contactați-ne",
-      "description": "La Venador Prim, suntem gata să transformăm viziunea dvs. în realitate cu soluțiile noastre de beton de înaltă calitate. Fie că aveți o întrebare, aveți nevoie de o ofertă sau doriți să discutați despre proiectul dvs., echipa noastră este aici să vă ajute."
+      "description": "La Venador Prim, suntem gata să transformăm viziunea dvs. în realitate cu serviciile noastre de înaltă calitate. Fie că aveți o întrebare, aveți nevoie de o ofertă sau doriți să discutați despre proiectul dvs., echipa noastră este aici să vă ajute."
     },
     "form": {
       "title": "Trimiteți-ne un Mesaj",
