@@ -46,7 +46,7 @@ export default function CertificationsSection({
                   alt={t(`certificates.certifications.${cert.name}.name`)}
                   height={200}
                   width={200}
-                  className="object-cover object-center"
+                  className="object-cover h-full w-full object-center"
                 />
               </div>
             </div>

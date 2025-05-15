@@ -1,6 +1,6 @@
 "use client";
 
-import heroImage from "@/public/images/contact-bg.jpeg";
+import heroImage from "@/public/images/contact-bg.jpg";
 import { useTranslation } from "react-i18next";
 import ContactFormSection from "../components/contact/contact-form-section";
 import OfficeLocationSection from "../components/contact/office-location-section";
