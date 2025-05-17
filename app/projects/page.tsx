@@ -1,6 +1,6 @@
 "use client";
 
-import heroImage from "@/public/images/projects/projects-hero-bg.jpeg";
+import heroImage from "@/public/images/projects/projects-hero-bg.jpg";
 import { useTranslation } from "react-i18next";
 import HeroSection from "../components/hero-section";
 import ProjectMap from "../components/projects/ProjectMap";

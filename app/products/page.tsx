@@ -1,7 +1,7 @@
 "use client";
 
-import chooseImage from "@/public/images/products/choose-product.jpeg";
-import heroImage from "@/public/images/products/product-hero-bg.jpeg";
+import chooseImage from "@/public/images/products/choose-product.jpg";
+import heroImage from "@/public/images/products/product-hero-bg.jpg";
 import { useTranslation } from "react-i18next";
 import FeatureSection from "../components/feature-section";
 import HeroSection from "../components/hero-section";
