@@ -4,6 +4,11 @@ import aboutImage from "@/public/images/home/about.jpg";
 import heroImage from "@/public/images/home/home-hero-bg.jpeg";
 
 import certificate1 from "@/public/images/home/cf-1.png";
+import certificate2 from "@/public/images/home/cf-2.png";
+import certificate3 from "@/public/images/home/cf-3.png";
+import certificate4 from "@/public/images/home/cf-4.png";
+import certificate5 from "@/public/images/home/cf-5.png";
+import certificate6 from "@/public/images/home/cf-6.png";
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -20,7 +25,7 @@ import OurServices from "./components/home/our-services";
 import chooseImage from "@/public/images/home/location.png";
 import project1 from "@/public/images/home/project-1.png";
 import project2 from "@/public/images/home/project-2.png";
-import project3 from "@/public/images/home/project-3.jpg";
+import project3 from "@/public/images/home/project-3.png";
 import Link from "next/link";
 
 export default function Home() {
@@ -31,6 +36,11 @@ export default function Home() {
     description: t("home.certifications.description"),
     certifications: [
       { name: "ISO 9001:2015", image: certificate1.src },
+      { name: "ISO 14001:2015", image: certificate2.src },
+      { name: "ISO 45001:2018", image: certificate3.src },
+      { name: "ISO 14001:2015", image: certificate4.src },
+      { name: "ISO 14001:2015", image: certificate5.src },
+      { name: "ISO 14001:2015", image: certificate6.src },
     ],
   };
 

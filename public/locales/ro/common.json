@@ -15,7 +15,7 @@
   "home": {
     "hero": {
       "title": "Rezistență, Fiabilitate, Standarde, Stâlpi",
-      "description": "Oferim soluții inovatoare pentru stâlpi din beton precomprimat centrifugat, concepute pentru a asigura durabilitate pe termen lung, performanță ridicată și economii semnificative de costuri.",
+      "description": "Ne specializăm în soluții avansate pentru stâlpi de beton, proiectate pentru rezistență, durabilitate și precizie. Fie că este vorba de proiecte industriale, comerciale sau rezidențiale.",
       "buttonText": "Despre Noi"
     },
     "services": {
@@ -37,7 +37,7 @@
     },
     "whoWeAre": {
       "title": "Cine Suntem",
-      "description": "Suntem prima uzină din Republica Moldova specializată în fabricarea stâlpilor din beton precomprimat centrifugat, destinați liniilor electrice aeriene (LEA). Uzina noastră este dotată cu echipamente moderne de ultimă generație, inclusiv instalații de producție performante, sisteme avansate de testare și echipamente specializate pentru monitorizarea calității. Ne concentrăm pe furnizarea de soluții avansate și fiabile, proiectate pentru a oferi rezistență structurală ridicată, durabilitate pe termen lung și exploatare eficientă în orice condiții de mediu.",
+      "description": "Cu ani de experiență în fabricarea stâlpilor de beton, oferim soluții de înaltă calitate, durabile și proiectate cu precizie. Misiunea noastră este să creăm fundația pentru structuri puternice și durabile.",
       "buttonText": "Află Mai Multe"
     },
     "projects": {
@@ -45,24 +45,24 @@
       "viewAll": "Vezi Toate Proiectele",
       "slides": {
         "skylineTowers": {
-          "alt": "Stâlpi de beton",
-          "title": "Stâlpi de beton"
+          "alt": "Turnurile Skyline în laborator",
+          "title": "Turnurile Skyline"
         },
         "bridgeLink": {
-          "alt": "Stâlpi de beton ",
-          "title": "Stâlpi de beton"
+          "alt": "Stâlpi de beton BridgeLink Express",
+          "title": "BridgeLink Express"
         },
         "bridgeLinkSpecs": {
-          "alt": "Stâlpi de beton",
-          "title": "Stâlpi de beton"
+          "alt": "Tehnicienii BridgeLink Express verifică specificațiile",
+          "title": "BridgeLink Express"
         },
         "loadTesting": {
-          "alt": "Stâlpi de beton",
-          "title": "Stâlpi de beton"
+          "alt": "Echipament de testare a sarcinii pentru stâlpi de beton",
+          "title": "Testare Sarcină"
         },
         "durabilityTesting": {
-          "alt": "Stâlpi de beton",
-          "title": "Stâlpi de beton"
+          "alt": "Test de durabilitate în camera climatică",
+          "title": "Test de Durabilitate"
         }
       }
     },
@@ -70,7 +70,7 @@
       "title": "De Ce Să Ne Alegeți?",
       "features": {
         "durableDesigns": {
-          "title": "Design Durabil",
+          "title": "Design Futuristic și Durabil",
           "description": "Stâlpii noștri de beton sunt construiți pentru a rezista în condiții extreme și utilizare îndelungată."
         },
         "qualityAssurance": {
@@ -95,7 +95,7 @@
   "about": {
     "hero": {
       "title": "Despre Noi",
-      "description": "La Venador Prim, ne specializăm în fabricarea stâlpilor de beton de înaltă calitate, oferind rezistență, durabilitate și fiabilitate pentru toate tipurile de proiecte."
+      "description": "La Venador Prim, ne specializăm în fabricarea stâlpilor de beton de înaltă calitate, oferind rezistență, durabilitate și fiabilitate pentru toate tipurile de proiecte de construcții."
     },
     "coreValues": {
       "title": "Valorile Noastre de Bază",
@@ -119,7 +119,7 @@
       "description": "La Venador Prim, misiunea noastră este să oferim soluții avansate de beton care redefinesc durabilitatea și integritatea structurală. Ne străduim să oferim măiestrie superioară, proiecte inovatoare și soluții de construcție durabile care depășesc standardele industriei. Angajamentul nostru față de calitate și satisfacția clienților ne motivează să creăm stâlpi care formează baza structurilor puternice și durabile."
     },
     "manufacturing": {
-      "title": "Încrederea Clienților Noștri ne Recomandă",
+      "title": "Suntem o Companie de Producție",
       "features": {
         "expertise": {
           "title": "Expertiză Dovedită",
@@ -145,12 +145,12 @@
       "title": "Gama Noastră de Produse",
       "buttonText": "Contactați-ne",
       "standard": {
-        "title": "Stâlpi Centrifugați din Beton Precomprimat",
-        "description": "Linii electrice aeriene de medie și înaltă tensiune."
+        "title": "Stâlpi de Beton Standard",
+        "description": "Stâlpi de beton de înaltă calitate și fiabili pentru nevoi generale de construcție"
       },
       "precast": {
-        "title": "Stâlpi Centrifugați din Beton Precomprimat",
-        "description": "Stâlpi fabricați în uzină pentru zone industriale, rurale sau cu condiții geotehnice dificile"
+        "title": "Stâlpi de Beton Prefabricat",
+        "description": "Stâlpi fabricați în uzină pentru instalare rapidă și calitate consistentă"
       },
       "custom": {
         "title": "Stâlpi Proiectați la Comandă",
@@ -249,26 +249,62 @@
   "projects": {
     "hero": {
       "title": "Proiectele Noastre",
-      "description": "La Venador Prim, ne mândrim cu furnizarea de servicii de înaltă calitate pentru o varietate de proiecte, atât la nivel național, cât și internațional."
+      "description": "La Venador Prim, ne mândrim să oferim soluții de beton de înaltă calitate pentru diverse proiecte de construcții. De la clădiri comerciale până la infrastructuri la scară largă, stâlpii noștri de beton oferă rezistență, durabilitate și fiabilitate."
     },
     "showcase": {
-      "title": "Proiectate să dureze, construite să reziste în timp.",
+      "title": "Construite pentru a Rezista, Proiectate pentru Excelență",
       "skylineTower": {
-        "title": "Tehnologia care înlocuiește metodele clasice.",
-        "description": "Stâlpii centrifugați din beton precomprimat aduc avantaje semnificative față de soluțiile tradiționale.",
+        "title": "Turnul Skyline – Reforțare pentru Clădiri Înalte",
+        "description": "Un turn comercial de 50 de etaje întărit cu stâlpii noștri de beton armat, asigurând capacitate maximă de susținere și stabilitate pe termen lung.",
         "features": {
-          "earthquake": "Potriviți pentru linii electrice cu tensiuni de la 35 kV până la 700 kV.",
-          "strength": "Durată de viață extinsă, între 50 și 70 de ani.",
-          "integrity": "Rezistență sporită la seisme – proiectați special pentru zone cu risc seismic ridicat."
+          "earthquake": "Proiectat pentru rezistență la cutremure.",
+          "strength": "Beton de înaltă rezistență pentru zgârie-nori.",
+          "integrity": "Asigură integritate structurală pe termen lung."
         }
       },
       "metroBridge": {
-        "title": "Soluția eficientă pentru rețele electrice durabile.",
-        "description": "Mai multă valoare pentru investiția ta – cu stâlpii din beton precomprimat, eficiența se întâlnește cu durabilitatea.",
+        "title": "Podul Metro – Excelență în Infrastructură",
+        "description": "Un proiect de transport la scară largă care utilizează stâlpii noștri prefabricați pentru durabilitate îmbunătățită și eficiență în construcție.",
         "features": {
-          "installation": "Costuri reduse în comparație cu pilonii metalici.",
-          "traffic": "Fără cerințe de întreținere suplimentară, ceea ce generează economii pe termen lung.",
-          "weather": "Compatibili cu soluri agresive, fără compromisuri în performanță."
+          "installation": "Instalare rapidă cu tehnologie prefabricată.",
+          "traffic": "Proiectat pentru trafic intens.",
+          "weather": "Rezistent la condiții meteorologice extreme."
+        }
+      },
+      "residentialComplex": {
+        "title": "Complex Rezidențial Modern – Fundații Solide",
+        "description": "O dezvoltare rezidențială contemporană construită pe stâlpii noștri personalizați de beton, proiectată pentru a oferi integritate structurală și siguranță.",
+        "features": {
+          "sustainable": "Materiale durabile și sustenabile.",
+          "support": "Susține structuri rezidențiale cu mai multe etaje.",
+          "safety": "Proiectat pentru siguranță seismică."
+        }
+      },
+      "luxuryHotel": {
+        "title": "Hotel de Lux – Rezistență Arhitecturală",
+        "description": "Un proiect hotelier premium unde stâlpii noștri de beton de înaltă calitate contribuie atât la fiabilitatea structurală cât și la estetica modernă.",
+        "features": {
+          "design": "Proiectat personalizat pentru atractivitate arhitecturală.",
+          "stability": "Oferă stabilitate pe termen lung.",
+          "aesthetics": "Îmbunătățește luxul și designul modern."
+        }
+      },
+      "warehouse": {
+        "title": "Depozit Industrial – Suport pentru Sarcini Grele",
+        "description": "Un depozit de mare capacitate susținut de stâlpii noștri industriali de beton, asigurând performanță pe termen lung sub sarcini grele.",
+        "features": {
+          "strength": "Rezistă la greutate și stres extrem.",
+          "resistance": "Materiale rezistente la foc și durabile.",
+          "optimization": "Optimizat pentru depozitare la scară largă."
+        }
+      },
+      "officePark": {
+        "title": "Parc de Birouri Sustenabil – Inovație Ecologică",
+        "description": "O construcție conștientă din punct de vedere al mediului folosind soluțiile noastre ecologice de beton, reducând amprenta de carbon fără a compromite rezistența.",
+        "features": {
+          "carbon": "Folosește amestec de beton cu conținut redus de carbon.",
+          "efficiency": "Energetic eficient și sustenabil.",
+          "certification": "Proiectat pentru certificare verde pe termen lung."
         }
       }
     }

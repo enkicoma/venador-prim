@@ -21,10 +21,10 @@ export default function ClientsPartnersSection() {
       src: certification3.src,
       alt: "Client Logo 3",
     },
-    // {
-    //   src: certification4.src,
-    //   alt: "Client Logo 4",
-    // },
+    {
+      src: certification4.src,
+      alt: "Client Logo 4",
+    },
     {
       src: certification1.src,
       alt: "Client Logo 5",
