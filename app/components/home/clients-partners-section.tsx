@@ -2,9 +2,7 @@ import LogoSlider from "../logo-slider";
 import certification1 from "@/public/images/home/ct-1.png";
 import certification2 from "@/public/images/home/ct-2.png";
 import certification3 from "@/public/images/home/ct-3.png";
-import certification4 from "@/public/images/home/ct-4.png";
-// import certification5 from "@/public/images/home/ct-5.png";
-// import certification6 from "@/public/images/home/ct-6.png";
+
 
 export default function ClientsPartnersSection() {
   // Sample logos - in a real project, you would import these from your assets
@@ -20,10 +18,6 @@ export default function ClientsPartnersSection() {
     {
       src: certification3.src,
       alt: "Client Logo 3",
-    },
-    {
-      src: certification4.src,
-      alt: "Client Logo 4",
     },
     {
       src: certification1.src,
