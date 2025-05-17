@@ -19,10 +19,17 @@ const locations: Location[] = [
   },
   {
     id: 3,
-    name: 'Moldova Common',
-    position: [47.003670, 28.907089] as [number, number],
-    description: "America's oldest public park",
+    name: 'Bulgaria Common',
+    position: [42.7339, 25.4858] as [number, number],
+    description: "Bulgaria",
   },
+  {
+    id: 4,
+    name: 'Czechia Common',
+    position: [49.8175, 15.4730] as [number, number],
+    description: "Czechia",
+  },
+  
   // {
   //   id: 4,
   //   name: 'MIT',
