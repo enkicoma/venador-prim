@@ -1,8 +1,11 @@
 "use client";
 
-import bleImage1 from "@/public/images/projects/ble-1.jpg";
-import bleImage2 from "@/public/images/projects/ble-2.jpg";
-
+import bleImage1 from "@/public/images/projects/ble-1.png";
+import bleImage2 from "@/public/images/projects/ble-2.png";
+import bleImage3 from "@/public/images/projects/ble-3.png";
+import bleImage4 from "@/public/images/projects/ble-4.png";
+import bleImage5 from "@/public/images/projects/ble-5.png";
+import bleImage6 from "@/public/images/projects/ble-6.png";
 import { Check } from "lucide-react";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
@@ -25,7 +28,7 @@ export default function ProjectsShowcase() {
       features: [
         t("projects.showcase.skylineTower.features.earthquake"),
         t("projects.showcase.skylineTower.features.strength"),
-        t("projects.showcase.skylineTower.features.integrity")
+        t("projects.showcase.skylineTower.features.integrity"),
       ],
     },
     {
@@ -36,6 +39,46 @@ export default function ProjectsShowcase() {
         t("projects.showcase.metroBridge.features.installation"),
         t("projects.showcase.metroBridge.features.traffic"),
         t("projects.showcase.metroBridge.features.weather"),
+      ],
+    },
+    {
+      title: t("projects.showcase.residentialComplex.title"),
+      description: t("projects.showcase.residentialComplex.description"),
+      image: bleImage3.src,
+      features: [
+        t("projects.showcase.residentialComplex.features.sustainable"),
+        t("projects.showcase.residentialComplex.features.support"),
+        t("projects.showcase.residentialComplex.features.safety"),
+      ],
+    },
+    {
+      title: t("projects.showcase.luxuryHotel.title"),
+      description: t("projects.showcase.luxuryHotel.description"),
+      image: bleImage4.src,
+      features: [
+        t("projects.showcase.luxuryHotel.features.design"),
+        t("projects.showcase.luxuryHotel.features.stability"),
+        t("projects.showcase.luxuryHotel.features.aesthetics"),
+      ],
+    },
+    {
+      title: t("projects.showcase.warehouse.title"),
+      description: t("projects.showcase.warehouse.description"),
+      image: bleImage5.src,
+      features: [
+        t("projects.showcase.warehouse.features.strength"),
+        t("projects.showcase.warehouse.features.resistance"),
+        t("projects.showcase.warehouse.features.optimization"),
+      ],
+    },
+    {
+      title: t("projects.showcase.officePark.title"),
+      description: t("projects.showcase.officePark.description"),
+      image: bleImage6.src,
+      features: [
+        t("projects.showcase.officePark.features.carbon"),
+        t("projects.showcase.officePark.features.efficiency"),
+        t("projects.showcase.officePark.features.certification"),
       ],
     },
   ];

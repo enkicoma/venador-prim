@@ -27,7 +27,7 @@ const defaultIcon = new Icon({
 const Map = ({ locations }: MapProps) => {
   return (
     <MapContainer
-      center={[50, 15]}
+      center={[54.5260, 15.2551]}
       zoom={5}
       style={{ height: '100%', width: '100%' }}
     >
