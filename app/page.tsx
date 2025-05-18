@@ -17,10 +17,12 @@ import CTABanner from "./components/home/cta-banner";
 import GetInTouchSection from "./components/home/get-in-touch";
 import OurServices from "./components/home/our-services";
 
-import chooseImage from "@/public/images/home/location.png";
-import project1 from "@/public/images/home/project-1.png";
-import project2 from "@/public/images/home/project-2.png";
+import chooseImage from "@/public/images/home/location.jpg";
+import project1 from "@/public/images/home/project-1.jpg";
+import project2 from "@/public/images/home/project-2.jpg";
 import project3 from "@/public/images/home/project-3.jpg";
+import project4 from "@/public/images/home/project-4.jpg";
+import project5 from "@/public/images/home/project-5.jpg";
 import Link from "next/link";
 
 export default function Home() {
@@ -80,12 +82,12 @@ export default function Home() {
       title: t("home.projects.slides.bridgeLinkSpecs.title"),
     },
     {
-      image: project1.src,
+      image: project4.src,
       alt: t("home.projects.slides.loadTesting.alt"),
       title: t("home.projects.slides.loadTesting.title"),
     },
     {
-      image: project2.src,
+      image: project5.src,
       alt: t("home.projects.slides.durabilityTesting.alt"),
       title: t("home.projects.slides.durabilityTesting.title"),
     },

@@ -1,6 +1,6 @@
 "use client";
 
-import heroImage from "@/public/images/services/services-hero-bg.jpeg";
+import heroImage from "@/public/images/services/services-hero-bg.jpg";
 import { useTranslation } from "react-i18next";
 import HeroSection from "../components/hero-section";
 import ProcessSection from "../components/services/process-section";

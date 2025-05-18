@@ -20,8 +20,8 @@ const defaultIcon = new Icon({
     'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
   shadowUrl:
     'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
+  iconSize: [22, 31],
+  iconAnchor: [12, 35],
 });
 
 const Map = ({ locations }: MapProps) => {

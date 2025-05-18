@@ -24,7 +24,7 @@ export default function Footer() {
           {/* Social Media Icons */}
           <div className="flex items-center space-x-4 mb-8">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/venador.prim/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
@@ -33,7 +33,7 @@ export default function Footer() {
               <span className="sr-only">Facebook</span>
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/liubomir-pirtac-606741104/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
