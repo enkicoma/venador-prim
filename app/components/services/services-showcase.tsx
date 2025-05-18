@@ -1,9 +1,9 @@
 "use client";
 
-import psr1 from "@/public/images/services/psr-1.png";
+import psr1 from "@/public/images/services/psr-1.jpg";
 import psr2 from "@/public/images/services/psr-2.png";
-import psr3 from "@/public/images/services/psr-3.png";
-import psr4 from "@/public/images/services/psr-4.png";
+import psr3 from "@/public/images/services/psr-3.jpg";
+import psr4 from "@/public/images/services/psr-4.jpg";
 import { Check } from "lucide-react";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
@@ -25,6 +25,8 @@ export default function ServicesShowcase() {
         t("services.showcase.engineering.features.strength"),
         t("services.showcase.engineering.features.materials"),
         t("services.showcase.engineering.features.applications"),
+        t("services.showcase.engineering.features.applications2"),
+        t("services.showcase.engineering.features.applications3"),
       ],
     },
     {
@@ -34,6 +36,7 @@ export default function ServicesShowcase() {
         t("services.showcase.consultation.features.efficiency"),
         t("services.showcase.consultation.features.quality"),
         t("services.showcase.consultation.features.cost"),
+        t("services.showcase.consultation.features.cost2"),
       ],
     },
     {

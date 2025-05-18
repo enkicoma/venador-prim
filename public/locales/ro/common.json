@@ -45,24 +45,24 @@
       "viewAll": "Vezi Toate Proiectele",
       "slides": {
         "skylineTowers": {
-          "alt": "Stâlpi de beton",
-          "title": "Stâlpi de beton"
+          "alt": "Tehnologie de ultimă generație",
+          "title": "Tehnologie de ultimă generație"
         },
         "bridgeLink": {
           "alt": "Stâlpi de beton ",
-          "title": "Stâlpi de beton"
+          "title": "Stâlpi din beton precomprimat centrifugat"
         },
         "bridgeLinkSpecs": {
-          "alt": "Stâlpi de beton",
-          "title": "Stâlpi de beton"
+          "alt": "Echipamente specializate pentru monitorizarea calității",
+          "title": "Echipamente specializate pentru monitorizarea calității"
         },
         "loadTesting": {
-          "alt": "Stâlpi de beton",
-          "title": "Stâlpi de beton"
+          "alt": "Distribuție națională și internațională, fără compromisuri",
+          "title": "Distribuție națională și internațională, fără compromisuri"
         },
         "durabilityTesting": {
-          "alt": "Stâlpi de beton",
-          "title": "Stâlpi de beton"
+          "alt": "Încrederea partenerilor noștri ne definește",
+          "title": "Încrederea partenerilor noștri ne definește"
         }
       }
     },
@@ -191,40 +191,43 @@
   "services": {
     "hero": {
       "title": "Serviciile Noastre",
-      "description": "La Venador Prim, oferim soluții de stâlpi de beton de înaltă calitate, proiectate pentru a îndeplini cele mai înalte standarde din industrie. Expertiza noastră asigură durabilitate, precizie și rezistență pentru o gamă largă de proiecte de construcții."
+      "description": "La Venador Prim, suntem dedicați furnizării de soluții fiabile și durabile în domeniul stâlpilor din beton precomprimat centrifugat. Produsele noastre sunt proiectate și fabricate conform celor mai înalte standarde din industrie, oferind rezistență structurală, precizie tehnică și o durată de viață extinsă."
     },
     "showcase": {
-      "title": "Construite pentru a Rezista, Proiectate pentru Excelență",
+      "title": "Construite pentru a rezista | Proiectate pentru excelență",
       "engineering": {
         "title": "Inginerie",
         "features": {
-          "strength": "Adaptate pentru Rezistență – Proiectate pentru a se potrivi cu nevoile specifice ale proiectului dvs.",
-          "materials": "Materiale Premium – Asigură durabilitate și suport pe termen lung.",
-          "applications": "Aplicații Versatile – Potrivite pentru proiecte rezidențiale, comerciale și industriale."
+          "strength": "Stâlpi proiectați pentru condiții extreme și cerințe tehnice complexe.",
+          "materials": "Zone seismice, cu rezistență la cutremure de până la 9 grade pe scara Richter.",
+          "applications": "Soluri agresive și condiții geotehnice dificile.",
+          "applications2": "Zone cu vânturi extreme, de până la 9 grade Beaufort.",
+          "applications3": "Linii electrice aeriene cu tensiuni între 35 kV și 700 kV, pentru aplicații variate."
         }
       },
       "consultation": {
         "title": "Consultanță",
         "features": {
-          "efficiency": "Rapid și Eficient – Reduce timpul de construcție cu stâlpi gata făcuți.",
-          "quality": "Calitate Consistentă – Fabricați conform specificațiilor exacte.",
-          "cost": "Cost-Eficient – Minimizează costurile cu forța de muncă și deșeurile de materiale."
+          "efficiency": "Selectarea tipului optim de stâlp, în funcție de condițiile specifice de teren și sarcină.",
+          "quality": "Integrarea soluțiilor noastre în proiectele tehnice existente.",
+          "cost": "Adaptarea documentației conform cerințelor normative locale și internaționale.",
+          "cost2": "Echipa noastră colaborează strâns cu dumneavoastră pentru a dezvolta un plan adaptat perfect obiectivelor și condițiilor de execuție."
         }
       },
       "transport": {
         "title": "Transport",
         "features": {
-          "durability": "Durabilitate Îmbunătățită – Crește capacitatea de susținere a sarcinii.",
-          "performance": "Performanță Fiabilă – Ideal pentru clădiri înalte și infrastructură.",
-          "standards": "Îndeplinește Standardele din Industrie – Construite pentru a rezista în condiții extreme."
+          "durability": "Transport prompt și sigur, oriunde pe teritoriul Republicii Moldova și în spațiul euroasiatic, cu respectarea tuturor normelor de siguranță.",
+          "performance": "Suport tehnic specializat pentru instalarea și utilizarea corectă a stâlpilor.",
+          "standards": "Monitorizarea traseului de livrare, pentru transparență și informare în timp real asupra statusului transportului."
         }
       },
       "logistics": {
         "title": "Logistică",
         "features": {
-          "sustainability": "Materiale Sostenibile – Reduce impactul asupra mediului.",
-          "efficiency": "Producție Energetic Eficientă – Amprentă de carbon mai mică în fabricație.",
-          "performance": "Performanță Pe Termen Lung – Menține rezistența în timp."
+          "sustainability": "Planificare logistică personalizată, adaptată cerințelor fiecărui proiect pentru livrări eficiente și fără întârzieri.",
+          "efficiency": "Livrare cu convoi specializat, adaptat dimensiunilor și greutății stâlpilor, pentru transport în siguranță, conform normelor rutiere și tehnice.",
+          "performance": "Pregătirea cu echipamente specializate, pentru protejarea optimă a stâlpilor pe durata transportului și descărcării."
         }
       }
     },
