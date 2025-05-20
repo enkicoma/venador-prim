@@ -14,7 +14,7 @@
   },
   "home": {
     "hero": {
-      "title": "Rezistență, Fiabilitate, Standarde, Stâlpi",
+      "title": "Rezistență, Siguranță, Durabilitate",
       "description": "Oferim soluții inovatoare pentru stâlpi din beton precomprimat centrifugat, concepute pentru a asigura durabilitate pe termen lung, performanță ridicată și economii semnificative de costuri.",
       "buttonText": "Despre Noi"
     },
@@ -116,7 +116,7 @@
     },
     "advancedTechnology": {
       "title": "Tehnologie Avansată",
-      "description": "La Venador Prim, misiunea noastră este să oferim soluții avansate de beton care redefinesc durabilitatea și integritatea structurală. Ne străduim să oferim măiestrie superioară, proiecte inovatoare și soluții de construcție durabile care depășesc standardele industriei. Angajamentul nostru față de calitate și satisfacția clienților ne motivează să creăm stâlpi care formează baza structurilor puternice și durabile."
+      "description": "Misiunea noastră este să oferim soluții inovatoare în proiectarea și producerea stâlpilor pentru linii electrice aeriene (LEA), cu o durabilitate ce depășește standardele industriei. Proiectăm stâlpi cu un termen de exploatare de 50–70 de ani, care oferă fiabilitate și performanță pe termen lung. Angajamentul nostru față de calitate și satisfacția clienților reprezintă motorul care ne motivează să dezvoltăm produse ce stau la baza unor structuri rezistente, sigure și durabile."
     },
     "manufacturing": {
       "title": "Încrederea Clienților Noștri ne Recomandă",
@@ -331,7 +331,7 @@
       "title": "Biroul Nostru",
       "address": "Chisinau MD, Șoseaua Hînceşti 290, MD-2051, Moldova",
       "phone": "+373 692 58 899",
-      "email": "info@venadorprim.com, liubomir.pirtac@venadorprim.com, finance@venadorprim.com",
+      "email": "info@venadorprim.com, finance@venadorprim.com",
       "mapTitle": "Locația Biroului"
     }
   }
