@@ -30,6 +30,8 @@ export default function ContactFormSection() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: null });
 
+    console.log("submitted data:", formData);
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",

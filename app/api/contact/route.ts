@@ -1,10 +1,12 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
-if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
-  console.error("Email configuration is missing");
-  throw new Error("Email configuration is missing");
+if (!process.env.RESEND_API_KEY) {
+  console.error("Resend API key is missing");
+  throw new Error("Resend API key is missing");
 }
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
@@ -17,25 +19,11 @@ export async function POST(req: Request) {
         { message: "Required fields are missing" },
         { status: 400 }
       );
-    }
-
-    // Create a transporter using Gmail SMTP
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-      tls: {
-        rejectUnauthorized: false,
-      },
-    });
-
-    // Email content
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: "info@venadorprim.com",
-      replyTo: email, // Allow replying directly to the sender
+    } // Send email using Resend
+    await resend.emails.send({
+      from: "Venador Prim <onboarding@resend.dev>",
+      to: ["wedigitalmonk@gmail.com"],
+      replyTo: email,
       subject: `New Contact Form Submission: ${subject}`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -46,10 +34,7 @@ export async function POST(req: Request) {
         <p><strong>Message:</strong></p>
         <p>${message.replace(/\n/g, "<br>")}</p>
       `,
-    };
-
-    // Send email
-    await transporter.sendMail(mailOptions);
+    });
 
     return NextResponse.json(
       { message: "Email sent successfully" },
