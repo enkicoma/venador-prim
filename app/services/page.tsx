@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import ProcessSection from "../components/services/process-section";
 import ServicesContent from "../components/services/services-showcase";
 import { metadata as seoMetadata } from "./metadata";
+import ServicesHeader from "../components/services/ServicesHeader";
 
 export async function generateMetadata({
   params,
@@ -100,7 +101,7 @@ export default function ServicesPage({
           }),
         }}
       />
-      
+      <ServicesHeader />
       <ServicesContent />
       <ProcessSection />
     </>
