@@ -1,4 +1,3 @@
-"use client";
 
 import heroImage from "@/public/images/contact-bg.jpeg";
 import { useTranslation } from "react-i18next";

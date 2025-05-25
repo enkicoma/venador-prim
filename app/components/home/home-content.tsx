@@ -1,0 +1,155 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
+import aboutImage from "@/public/images/home/about.jpeg";
+import certificate1 from "@/public/images/home/cf-1.png";
+import certificate2 from "@/public/images/home/cf-2.png";
+import certificate3 from "@/public/images/home/cf-3.png";
+import certificate4 from "@/public/images/home/cf-4.png";
+import certificate5 from "@/public/images/home/cf-5.png";
+import certificate6 from "@/public/images/home/cf-6.png";
+import heroImage from "@/public/images/home/home-hero-bg.jpeg";
+import chooseImage from "@/public/images/home/location.png";
+import project1 from "@/public/images/home/project-1.png";
+import project2 from "@/public/images/home/project-2.png";
+import project3 from "@/public/images/home/project-3.png";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
+// import HeroSection from "../hero-section";
+import CardSlider from "../card-slider";
+import FeatureSection from "../feature-section";
+import HeroSection from "../hero-section";
+import CertificationsWithText from "../home/certifications-with-text";
+import ClientsPartnersSection from "../home/clients-partners-section";
+import CTABanner from "../home/cta-banner";
+import GetInTouchSection from "../home/get-in-touch";
+import OurServices from "../home/our-services";
+
+export default function HomeContent() {
+  const { t } = useTranslation();
+
+  const certificationsData = {
+    title: t("home.certifications.title"),
+    description: t("home.certifications.description"),
+    certifications: [
+      { name: "ISO 9001:2015", image: certificate1.src },
+      { name: "ISO 14001:2015", image: certificate2.src },
+      { name: "ISO 45001:2018", image: certificate3.src },
+      { name: "ISO 14001:2015", image: certificate4.src },
+      { name: "ISO 14001:2015", image: certificate5.src },
+      { name: "ISO 14001:2015", image: certificate6.src },
+    ],
+  };
+
+  const whoWeAreFeatures = {
+    title: t("home.whoWeAre.title"),
+    description: t("home.whoWeAre.description"),
+    image: aboutImage.src,
+    buttonText: t("home.whoWeAre.buttonText"),
+    buttonLink: "/about",
+  };
+
+  const whyChooseUsFeatures = {
+    title: t("home.whyChooseUs.title"),
+    features: [
+      {
+        title: t("home.whyChooseUs.features.durableDesigns.title"),
+        description: t("home.whyChooseUs.features.durableDesigns.description"),
+      },
+      {
+        title: t("home.whyChooseUs.features.qualityAssurance.title"),
+        description: t(
+          "home.whyChooseUs.features.qualityAssurance.description"
+        ),
+      },
+      {
+        title: t("home.whyChooseUs.features.delivery.title"),
+        description: t("home.whyChooseUs.features.delivery.description"),
+      },
+    ],
+    image: chooseImage.src,
+  };
+
+  const testingProcessSlides = [
+    {
+      image: project1.src,
+      alt: t("home.projects.slides.skylineTowers.alt"),
+      title: t("home.projects.slides.skylineTowers.title"),
+    },
+    {
+      image: project2.src,
+      alt: t("home.projects.slides.bridgeLink.alt"),
+      title: t("home.projects.slides.bridgeLink.title"),
+    },
+    {
+      image: project3.src,
+      alt: t("home.projects.slides.bridgeLinkSpecs.alt"),
+      title: t("home.projects.slides.bridgeLinkSpecs.title"),
+    },
+    {
+      image: project1.src,
+      alt: t("home.projects.slides.loadTesting.alt"),
+      title: t("home.projects.slides.loadTesting.title"),
+    },
+    {
+      image: project2.src,
+      alt: t("home.projects.slides.durabilityTesting.alt"),
+      title: t("home.projects.slides.durabilityTesting.title"),
+    },
+  ];
+
+  return (
+    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+      <HeroSection
+        title={t("home.hero.title")}
+        description={t("home.hero.description")}
+        backgroundImage={heroImage.src}
+        className="pt-72 pb-48"
+        buttonText={t("home.hero.buttonText")}
+      />
+      <FeatureSection {...whoWeAreFeatures} />
+      <OurServices />
+      <CardSlider
+        slidesPerView={3}
+        slides={testingProcessSlides}
+        className="bg-[#F5F5F5]"
+      >
+        <div className="flex items-center justify-between mb-12 container mx-auto">
+          <h2
+            className="text-4xl font-bold text-center"
+            style={{ color: "#1B3B47" }}
+          >
+            {t("home.projects.title")}
+          </h2>
+          <div>
+            <Button
+              asChild
+              type="submit"
+              className="inline-flex items-center px-6 py-6 rounded-lg bg-transparent text-[#1B3B47] hover:bg-primary/90 hover:text-white transition-colors border border-[#1B3B47]"
+            >
+              <Link href="/projects">
+                <span className="mr-2">{t("home.projects.viewAll")}</span>
+                <ArrowRight size={20} />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </CardSlider>
+      <FeatureSection
+        buttonLink="/contact"
+        buttonText={t("products.range.buttonText")}
+        {...whyChooseUsFeatures}
+        reverse={true}
+      />
+      <ClientsPartnersSection />
+      <CertificationsWithText {...certificationsData} />
+      <GetInTouchSection />
+      <CTABanner
+        title={t("home.cta.title")}
+        description={t("home.cta.description")}
+        className="optional-additional-classes"
+      />
+    </div>
+  );
+}

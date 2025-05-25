@@ -1,46 +1,42 @@
-"use client";
+import { Metadata } from "next";
+import ProductsContent from "../components/products/products-content";
+import { metadata as seoMetadata } from "./metadata";
 
-import chooseImage from "@/public/images/products/choose-product.jpeg";
-import heroImage from "@/public/images/products/product-hero-bg.jpeg";
-import { useTranslation } from "react-i18next";
-import FeatureSection from "../components/feature-section";
-import HeroSection from "../components/hero-section";
-import ProductRange from "../components/products/product-range";
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang?: string };
+}): Promise<Metadata> {
+  const lang = (params?.lang || "en") as keyof typeof seoMetadata;
+  const meta = seoMetadata[lang];
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      type: "website",
+      url: "https://venadorprim.com/products",
+      siteName: "Venador Prim",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.description,
+    },
+    alternates: {
+      canonical: "https://venadorprim.com/products",
+      languages: {
+        en: "https://venadorprim.com/en/products",
+        ro: "https://venadorprim.com/ro/products",
+        ru: "https://venadorprim.com/ru/products",
+      },
+    },
+  };
+}
 
 export default function ProductsPage() {
-  const { t } = useTranslation();
-
-  const whyChooseUsFeatures = {
-    title: t("products.whyChoose.title"),
-    description: t("products.whyChoose.description"),
-    features: [
-      {
-        title: t("products.whyChoose.features.durability.title"),
-        description: t("products.whyChoose.features.durability.description"),
-      },
-      {
-        title: t("products.whyChoose.features.engineering.title"),
-        description: t("products.whyChoose.features.engineering.description"),
-      },
-      {
-        title: t("products.whyChoose.features.delivery.title"),
-        description: t("products.whyChoose.features.delivery.description"),
-      },
-    ],
-    image: chooseImage.src,
-  };
-
-  return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <HeroSection
-        title={t("products.hero.title")}
-        description={t("products.hero.description")}
-        backgroundImage={heroImage.src}
-      />
-      <div className="pt-24 pb-32">
-        <ProductRange />
-        <FeatureSection buttonLink="/contact" buttonText={t("products.range.buttonText")} {...whyChooseUsFeatures} />
-      </div>
-    </div>
-  );
+  return <ProductsContent />;
 }

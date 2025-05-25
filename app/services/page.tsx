@@ -1,25 +1,69 @@
-"use client";
-
 import heroImage from "@/public/images/services/services-hero-bg.jpeg";
-import { useTranslation } from "react-i18next";
-import HeroSection from "../components/hero-section";
-import ProcessSection from "../components/services/process-section";
-import ServicesShowcase from "../components/services/services-showcase";
+import { Metadata } from "next";
+import ServicesContent from "../components/services/services-content";
+import { metadata as seoMetadata } from "./metadata";
+import { getServiceStructuredData } from "./structured-data";
 
-export default function ServicesPage() {
-  const { t } = useTranslation();
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang?: string };
+}): Promise<Metadata> {
+  // Get the user's preferred language (you might want to adjust this based on your language detection)
+  const lang = (params?.lang || "en") as keyof typeof seoMetadata;
+  const meta = seoMetadata[lang];
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      type: "website",
+      url: "https://venadorprim.com/services",
+      images: [
+        {
+          url: heroImage.src,
+          width: 1200,
+          height: 630,
+          alt: meta.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.description,
+      images: [heroImage.src],
+    },
+    alternates: {
+      canonical: "https://venadorprim.com/services",
+      languages: {
+        en: "https://venadorprim.com/en/services",
+        ro: "https://venadorprim.com/ro/services",
+        ru: "https://venadorprim.com/ru/services",
+      },
+    },
+  };
+}
+
+export default function ServicesPage({
+  params,
+}: {
+  params: { lang?: string };
+}) {
+  const structuredData = getServiceStructuredData(params?.lang || "en");
 
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <HeroSection
-        title={t("services.hero.title")}
-        description={t("services.hero.description")}
-        backgroundImage={heroImage.src}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
       />
-      <div className="pt-24 pb-32">
-        <ServicesShowcase />
-        <ProcessSection />
-      </div>
-    </div>
+      <ServicesContent heroImage={heroImage.src} />
+    </>
   );
 }

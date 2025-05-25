@@ -16,11 +16,58 @@ export default function ContactFormSection() {
     subject: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string | null;
+  }>({
+    type: null,
+    message: null,
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: null });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setSubmitStatus({
+        type: "success",
+        message:
+          t("contact.form.successMessage") || "Message sent successfully!",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        lastname: "",
+        email: "",
+        telephone: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message:
+          t("contact.form.errorMessage") ||
+          "Failed to send message. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -157,11 +204,29 @@ export default function ContactFormSection() {
               type="submit"
               className="inline-flex items-center px-6 py-6 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors"
               style={{ backgroundColor: "#1B3B47" }}
+              disabled={isSubmitting}
             >
-              <span className="mr-2">{t("contact.form.submit")}</span>
+              <span className="mr-2">
+                {isSubmitting
+                  ? t("contact.form.submitting")
+                  : t("contact.form.submit")}
+              </span>
               <ArrowRight size={20} />
             </Button>
           </div>
+
+          {/* Submit Status Message */}
+          {submitStatus.message && (
+            <div
+              className={`mt-4 text-center text-sm ${
+                submitStatus.type === "success"
+                  ? "text-green-600"
+                  : "text-red-600"
+              }`}
+            >
+              {submitStatus.message}
+            </div>
+          )}
         </form>
       </div>
     </section>
