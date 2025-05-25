@@ -17,12 +17,66 @@ export default function GetInTouchSection() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
-  };
+  
+const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<{
+      type: "success" | "error" | null;
+      message: string | null;
+    }>({
+      type: null,
+      message: null,
+    });
 
+    console.log(isSubmitting, submitStatus);
+
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: null });
+
+    console.log("submitted data:", formData);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setSubmitStatus({
+        type: "success",
+        message:
+          t("contact.form.successMessage") || "Message sent successfully!",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        lastname: "",
+        email: "",
+        telephone: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.log(error)
+      setSubmitStatus({
+        type: "error",
+        message:
+          t("contact.form.errorMessage") ||
+          "Failed to send message. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
