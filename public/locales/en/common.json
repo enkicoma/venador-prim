@@ -325,7 +325,19 @@
         "support": "Technical Support",
         "sales": "Sales",
         "other": "Other"
-      }
+      },
+      "successMessage": "Message send successfully!",
+      "sending": "Sending...",
+      "errors": {
+        "messageTooShort": "Message must be at least 10 characters",
+  "messageRequired": "Message is required",
+  "phoneInvalid": "Please enter a valid phone number",
+  "phoneRequired": "Phone number is required",
+  "emailInvalid": "Please enter a valid email address",
+  "emailRequired": "Email address is required",
+  "lastnameRequired": "Last name is required",
+  "nameRequired": "Name is required"
+}
     },
     "office": {
       "title": "Our Office",
