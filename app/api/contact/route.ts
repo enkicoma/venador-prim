@@ -21,8 +21,8 @@ export async function POST(req: Request) {
       );
     } // Send email using Resend
     await resend.emails.send({
-      from: "Venador Prim <onboarding@resend.dev>",
-      to: ["wedigitalmonk@gmail.com"],
+      from: "Venador Prim <info@info.venadorprim.com>",
+      to: ["info@venadorprim.com"],
       replyTo: email,
       subject: `New Contact Form Submission: ${subject}`,
       html: `
