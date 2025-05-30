@@ -1,73 +1,184 @@
-"use client";
+// /* eslint-disable @next/next/inline-script-id */
+// import heroImage from "@/public/images/projects/projects-hero-bg.jpg";
+// import { Metadata } from "next";
+// import Script from "next/script";
+// import { metadata as seoMetadata } from "./metadata";
+// import CertificateMain from "../components/certificates/CertificateMain";
 
-import tpImage1 from "@/public/images/certificates/tp-1.jpg";
-import tpImage2 from "@/public/images/certificates/tp-2.jpg";
-import tpImage3 from "@/public/images/certificates/tp-3.jpg";
-import tpImage4 from "@/public/images/certificates/tp-4.jpg";
-import tpImage5 from "@/public/images/certificates/tp-5.jpg";
-import tpImage6 from "@/public/images/certificates/tp-6.jpg";
-import tpImage7 from "@/public/images/certificates/tp-7.jpg";
+// export async function generateMetadata({
+//   params,
+// }: {
+//   params: { lang?: string };
+// }): Promise<Metadata> {
+//  const resolvedParams = await params;
+//   const lang = (resolvedParams?.lang || "en") as keyof typeof seoMetadata;
+//   const meta = seoMetadata[lang];
 
-import { useTranslation } from "react-i18next";
-import CardSlider from "../components/card-slider";
-import CertificationsSection from "../components/certificates/certifications-section";
+//   return {
+//     title: meta.title,
+//     description: meta.description,
+//     keywords: meta.keywords,
+//     openGraph: {
+//       title: meta.title as string,
+//       description: meta.description as string,
+//       type: "website",
+//       url: "https://venadorprim.com/projects",
+//       images: [
+//         {
+//           url: heroImage.src,
+//           width: 1200,
+//           height: 630,
+//           alt: meta.title as string | undefined,
+//         },
+//       ],
+//     },
+//     twitter: {
+//       card: "summary_large_image",
+//       title: meta.title as string | undefined,
+//       description: meta.description as string | undefined,
+//       images: [heroImage.src],
+//     },
+//     alternates: {
+//       canonical: "https://venadorprim.com/projects",
+//       languages: {
+//         en: "https://venadorprim.com/en/projects",
+//         ro: "https://venadorprim.com/ro/projects",
+//         ru: "https://venadorprim.com/ru/projects",
+//       },
+//     },
+//   };
+// }
 
-import ocImage1 from "@/public/images/certificates/oc-1.jpg";
+// export default function ProjectPage() {
 
-export default function CertificatesPage() {
-  const { t } = useTranslation();
+//   return (
+//     <>
+//       <Script
+//         type="application/ld+json"
+//         dangerouslySetInnerHTML={{
+//           __html: JSON.stringify({
+//             "@context": "https://schema.org",
+//             "@type": "CollectionPage",
+//             name: "Infrastructure Projects Portfolio",
+//             description:
+//               "Showcase of completed infrastructure projects using prestressed concrete poles and electrical infrastructure solutions",
+//             provider: {
+//               "@type": "Organization",
+//               name: "Venador Prim",
+//               url: "https://venadorprim.com",
+//             },
+//             about: {
+//               "@type": "Thing",
+//               name: "Electrical Infrastructure Projects",
+//               description:
+//                 "Implementation of power distribution infrastructure using prestressed concrete poles",
+//             },
+//             genre: "Infrastructure Construction",
+//             // keywords: seoMetadata[lang as keyof typeof seoMetadata].keywords.join(", ") ,
+//             image: heroImage.src,
+//             url: "https://venadorprim.com/projects",
+//           }),
+//         }}
+//       />
+//       <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+//         <CertificateMain />
+//       </div>
+//     </>
+//   );
+// }
 
-  const testingProcessSlides = [
-    {
-      image: tpImage1.src,
-      alt: t("certificates.testingProcess.slides.materialTesting.alt"),
-    },
-    {
-      image: tpImage2.src,
-      alt: t("certificates.testingProcess.slides.structuralInspection.alt"),
-    },
-    {
-      image: tpImage3.src,
-      alt: t("certificates.testingProcess.slides.qualityControl.alt"),
-    },
-    {
-      image: tpImage4.src,
-      alt: t("certificates.testingProcess.slides.loadTesting.alt"),
-    },
-    {
-      image: tpImage5.src,
-      alt: t("certificates.testingProcess.slides.durabilityTesting.alt"),
-    },
-    {
-      image: tpImage6.src,
-      alt: t("certificates.testingProcess.slides.durabilityTesting.alt"),
-    },
-    {
-      image: tpImage7.src,
-      alt: t("certificates.testingProcess.slides.durabilityTesting.alt"),
-    },
-  ];
 
-  const certifications = [
-    {
-      name: t("certificates.certifications.iso.name"),
-      image: ocImage1.src,
-    },
-    // {
-    //   name: t("certificates.certifications.ceMark.name"),
-    //   image: ocImage2.src,
-    // },
-  ];
+/* eslint-disable @next/next/inline-script-id */
+import heroImage from "@/public/images/projects/projects-hero-bg.jpg";
+import { Metadata } from "next";
+import Script from "next/script";
+import { metadata as seoMetadata } from "./metadata";
+import CertificateMain from "../components/certificates/CertificateMain";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang?: string }>;
+}): Promise<Metadata> {
+  const resolvedParams = await params;
+  const lang = (resolvedParams?.lang || "en") as keyof typeof seoMetadata;
+  const meta = seoMetadata[lang];
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
+    openGraph: {
+      title: meta.title as string,
+      description: meta.description as string,
+      type: "website",
+      url: "https://venadorprim.com/projects",
+      images: [
+        {
+          url: heroImage.src,
+          width: 1200,
+          height: 630,
+          alt: meta.title as string | undefined,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title as string | undefined,
+      description: meta.description as string | undefined,
+      images: [heroImage.src],
+    },
+    alternates: {
+      canonical: "https://venadorprim.com/projects",
+      languages: {
+        en: "https://venadorprim.com/en/projects",
+        ro: "https://venadorprim.com/ro/projects",
+        ru: "https://venadorprim.com/ru/projects",
+      },
+    },
+  };
+}
+
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ lang?: string }>;
+}) {
+  const resolvedParams = await params;
+  const lang = (resolvedParams?.lang || "en") as keyof typeof seoMetadata;
+console.log(lang)
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <div className="pt-24 pb-32">
-        <CertificationsSection certifications={certifications} />
-        <CardSlider
-          title={t("certificates.testingProcess.title")}
-          slides={testingProcessSlides}
-        />
+    <>
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "Infrastructure Projects Portfolio",
+            description:
+              "Showcase of completed infrastructure projects using prestressed concrete poles and electrical infrastructure solutions",
+            provider: {
+              "@type": "Organization",
+              name: "Venador Prim",
+              url: "https://venadorprim.com",
+            },
+            about: {
+              "@type": "Thing",
+              name: "Electrical Infrastructure Projects",
+              description:
+                "Implementation of power distribution infrastructure using prestressed concrete poles",
+            },
+            genre: "Infrastructure Construction",
+            // keywords: seoMetadata[lang].keywords.join(", "),
+            image: heroImage.src,
+            url: "https://venadorprim.com/projects",
+          }),
+        }}
+      />
+      <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+        <CertificateMain />
       </div>
-    </div>
+    </>
   );
 }

@@ -14,55 +14,55 @@
   },
   "home": {
     "hero": {
-      "title": "Durability, Reliability, Standards, Poles",
-      "description": "We specialize in cutting-edge concrete poles solutions designed for strength, durability, and precision. Whether for industrial, commercial, or residential projects.",
-      "buttonText": "About us"
+      "title": "Strength, Safety, Durability",
+      "description": "We offer innovative solutions for centrifugally cast prestressed concrete poles, designed to ensure long-term durability, high performance, and significant cost savings.",
+      "buttonText": "About Us"
     },
     "services": {
       "title": "Our Core Values",
       "items": {
         "customPillars": {
           "title": "Custom Concrete Poles",
-          "description": "Engineered to perfection for any construction project."
+          "description": "Designed to perfection for any construction project."
         },
         "consulting": {
           "title": "Project Consulting",
-          "description": "Expert guidance to ensure your project meets structural requirements."
+          "description": "Expert guidance to ensure project compliance with structural requirements."
         },
         "transport": {
-          "title": "Transport & Logistics",
-          "description": "Safe and timely delivery of concrete poles to your project site."
+          "title": "Transport and Logistics",
+          "description": "Safe and timely delivery of concrete poles to your location."
         }
       }
     },
     "whoWeAre": {
       "title": "Who We Are",
-      "description": "With years of experience in concrete poles manufacturing, we deliver high-quality, durable, and precision-engineered solutions. Our mission is to build the foundation for strong and lasting structures.",
-      "buttonText": "Read More"
+      "description": "We are the first plant in the Republic of Moldova specializing in the manufacture of centrifugally cast prestressed concrete poles for overhead power lines (LEA). Our plant is equipped with modern, state-of-the-art equipment, including high-performance production facilities, advanced testing systems, and specialized equipment for quality monitoring. We focus on providing advanced and reliable solutions, designed to offer high structural strength, long-term durability, and efficient operation in any environmental conditions.",
+      "buttonText": "Learn More"
     },
     "projects": {
       "title": "Our Projects",
       "viewAll": "View All Projects",
       "slides": {
         "skylineTowers": {
-          "alt": "Skyline Towers in laboratory",
-          "title": "Skyline Towers"
+          "alt": "State-of-the-art technology",
+          "title": "State-of-the-art technology"
         },
         "bridgeLink": {
-          "alt": "BridgeLink Express of concrete poles",
-          "title": "BridgeLink Express"
+          "alt": "Concrete poles",
+          "title": "Centrifugally cast prestressed concrete poles"
         },
         "bridgeLinkSpecs": {
-          "alt": "BridgeLink Express technicians checking specifications",
-          "title": "BridgeLink Express"
+          "alt": "Specialized equipment for quality monitoring",
+          "title": "Specialized equipment for quality monitoring"
         },
         "loadTesting": {
-          "alt": "Load testing equipment for concrete poles",
-          "title": "Load Testing"
+          "alt": "National and international distribution, without compromise",
+          "title": "National and international distribution, without compromise"
         },
         "durabilityTesting": {
-          "alt": "Durability testing in environmental chamber",
-          "title": "Durability Testing"
+          "alt": "The trust of our partners defines us",
+          "title": "The trust of our partners defines us"
         }
       }
     },
@@ -70,68 +70,68 @@
       "title": "Why Choose Us?",
       "features": {
         "durableDesigns": {
-          "title": "Futuristic & Durable Designs",
+          "title": "Durable Design",
           "description": "Our concrete poles are built to withstand extreme conditions and long-term use."
         },
         "qualityAssurance": {
-          "title": "Precision & Quality Assurance",
-          "description": "We use advanced techniques to ensure consistency and structural integrity."
+          "title": "Precision and Quality Control",
+          "description": "We use advanced technology to ensure stability and structural integrity."
         },
         "delivery": {
-          "title": "Fast & Reliable Delivery",
-          "description": "With efficient logistics, we ensure timely delivery to your project site."
+          "title": "Fast and Reliable Delivery",
+          "description": "With our efficient logistics, we ensure timely delivery to your location."
         }
       }
     },
     "certifications": {
-      "title": "Certifications",
-      "description": "We are committed to upholding the highest industry standards, ensuring that every concrete poles we produce meets rigorous quality, durability, and safety regulations. Our manufacturing process follows strict compliance measures, using advanced technology and premium materials to guarantee long-lasting strength and performance. With industry-recognized certifications, we demonstrate our dedication to excellence, reliability, and customer satisfaction. Whether for large-scale infrastructure projects or residential developments, our certified concrete solutions provide the foundation for safe and enduring construction."
+      "title": "Certificates",
+      "description": "We are committed to maintaining the highest industry standards, ensuring that every concrete pole we produce meets strict requirements for quality, durability, and safety. Our manufacturing process follows strict compliance measures, using advanced technology and premium materials to guarantee long-term strength and performance. With industry-recognized certifications, we demonstrate our commitment to excellence, reliability, and customer satisfaction. Whether for large-scale infrastructure projects or residential constructions, our certified concrete solutions provide the foundation for safe and durable constructions."
     },
     "cta": {
-      "title": "Build with Strength, Build with Confidence!",
-      "description": "Looking for high-quality concrete poles for your next project? Partner with us for durable, reliable, and expertly crafted solutions."
+      "title": "Build with Power, Build with Confidence!",
+      "description": "Looking for high-quality concrete poles for your next project? Partner with us for durable, reliable, and professionally manufactured solutions."
     }
   },
   "about": {
     "hero": {
       "title": "About Us",
-      "description": "At Venador Prim, we specialize in manufacturing high-quality concrete poles that provide strength, durability, and reliability for all types of construction projects."
+      "description": "At Venador Prim, we specialize in manufacturing high-quality concrete poles, offering strength, durability, and reliability for all types of projects."
     },
     "coreValues": {
       "title": "Our Core Values",
       "items": {
         "quality": {
-          "title": "Quality & Durability",
-          "description": "We use top-grade materials and advanced techniques to ensure our concrete poles stand the test of time."
+          "title": "Quality and Durability",
+          "description": "We use the highest quality materials and advanced technologies to ensure our concrete poles stand the test of time."
         },
         "innovation": {
-          "title": "Innovation & Precision",
-          "description": "We embrace modern engineering solutions to deliver precise, high-performance structures."
+          "title": "Innovation and Precision",
+          "description": "We implement modern engineering solutions to create precise and high-performance structures."
         },
         "commitment": {
           "title": "Customer Commitment",
-          "description": "Your satisfaction is our priority—we provide reliable service and tailored solutions for every project."
+          "description": "Your satisfaction is our priority. We offer reliable services and customized solutions for every project."
         }
       }
     },
     "advancedTechnology": {
-      "title": "Advanced Superior Technology",
-      "description": "At Venador Prim, our mission is to provide cutting-edge concrete solutions that redefine durability and structural integrity. We strive to deliver superior craftsmanship, innovative designs, and sustainable building solutions that exceed industry standards. Our commitment to quality and customer satisfaction drives us to create poles that form the foundation of strong, resilient structures."
+      "title": "Advanced Technology",
+      "description": "Our mission is to provide innovative solutions in the design and production of poles for overhead power lines (LEA), with durability that exceeds industry standards. We design poles with an operational lifespan of 50–70 years, offering long-term reliability and performance. Our commitment to quality and customer satisfaction is the driving force that motivates us to develop products that form the basis of resistant, safe, and durable structures."
     },
     "manufacturing": {
-      "title": "We Are a Manufacturing Company",
+      "title": "Our Customers' Trust Recommends Us",
       "features": {
         "expertise": {
           "title": "Proven Expertise",
           "description": "Years of experience in manufacturing durable concrete poles."
         },
         "materials": {
-          "title": "Top-Quality Materials",
-          "description": "Ensuring maximum strength and longevity."
+          "title": "Highest Quality Materials",
+          "description": "Ensuring maximum strength and durability."
         },
         "engineering": {
-          "title": "Precision Engineering",
-          "description": "Designed to meet industry standards with accuracy."
+          "title": "Precise Engineering",
+          "description": "Designed to precisely meet industry standards."
         }
       }
     }
@@ -139,51 +139,51 @@
   "products": {
     "hero": {
       "title": "Our Products",
-      "description": "At Venador Prim, we offer a range of high-quality concrete poles and structural solutions to meet diverse construction needs. Engineered with precision and durability."
+      "description": "At Venador Prim, we offer a wide range of high-quality concrete poles and structural solutions for various construction needs. Designed with precision and durability."
     },
     "range": {
       "title": "Our Product Range",
-      "buttonText": "Contact us",
+      "buttonText": "Contact Us",
       "standard": {
-        "title": "Standard Concrete Poles",
-        "description": "High-quality, reliable concrete poles for general construction needs"
+        "title": "Centrifugally Cast Prestressed Concrete Poles",
+        "description": "Medium and high voltage overhead power lines."
       },
       "precast": {
-        "title": "Precast Concrete Poles",
-        "description": "Factory-manufactured poles for quick installation and consistent quality"
+        "title": "Centrifugally Cast Prestressed Concrete Poles",
+        "description": "Factory-manufactured poles for industrial, rural areas, or areas with difficult geotechnical conditions."
       },
       "custom": {
-        "title": "Custom-Designed Poles",
-        "description": "Tailored solutions to meet specific project requirements"
+        "title": "Custom Designed Poles",
+        "description": "Customized solutions to meet specific project requirements."
       },
       "heavyDuty": {
-        "title": "Heavy-Duty Load-Bearing Poles",
-        "description": "Extra-strength poles for demanding structural applications"
+        "title": "Heavy-Duty Strength Poles",
+        "description": "Extra strength poles for demanding structural applications."
       },
       "decorative": {
         "title": "Decorative Architectural Poles",
-        "description": "Aesthetically pleasing poles that combine beauty with functionality"
+        "description": "Aesthetic poles that combine beauty with functionality."
       },
       "eco": {
-        "title": "Eco-Friendly Sustainable Poles",
-        "description": "Environmentally conscious poles made with sustainable materials"
+        "title": "Sustainable Eco-Friendly Poles",
+        "description": "Eco-friendly poles manufactured with sustainable materials."
       }
     },
     "whyChoose": {
       "title": "Why Choose Our Products?",
-      "description": "At Venador Prim, we go beyond just manufacturing concrete poles—we provide solutions that enhance durability, safety, and efficiency in construction. Here's why our products stand out",
+      "description": "At Venador Prim, we don't just manufacture concrete poles - we offer solutions that enhance durability, safety, and efficiency in construction. Here's why our products stand out:",
       "features": {
         "durability": {
           "title": "Superior Durability",
           "description": "Our concrete poles are built to withstand extreme conditions and long-term use."
         },
         "engineering": {
-          "title": "Precision Engineering",
-          "description": "We use advanced techniques to ensure consistency and structural integrity."
+          "title": "Precise Engineering",
+          "description": "We use advanced technology to ensure stability and structural integrity."
         },
         "delivery": {
-          "title": "Fast & Reliable Delivery",
-          "description": "With efficient logistics, we ensure timely delivery to your project site."
+          "title": "Fast and Reliable Delivery",
+          "description": "With our efficient logistics, we ensure timely delivery to your location."
         }
       }
     }
@@ -191,40 +191,43 @@
   "services": {
     "hero": {
       "title": "Our Services",
-      "description": "At Venador Prim, we provide top-tier concrete poles solutions designed to meet the highest industry standards. Our expertise ensures durability, precision, and strength for a wide range of construction projects."
+      "description": "At Venador Prim, we are dedicated to providing reliable and durable solutions in the field of centrifugally cast prestressed concrete poles. Our products are designed and manufactured according to the highest industry standards, offering structural strength, technical precision, and an extended lifespan."
     },
     "showcase": {
-      "title": "Built to Last, Engineered for Excellence",
+      "title": "Built to Last | Designed for Excellence",
       "engineering": {
         "title": "Engineering",
         "features": {
-          "strength": "Tailored for Strength – Designed to fit your project's specific needs.",
-          "materials": "Premium Materials – Ensuring durability and long-lasting support.",
-          "applications": "Versatile Applications – Suitable for residential, commercial, and industrial projects."
+          "strength": "Poles designed for extreme conditions and complex technical requirements.",
+          "materials": "Seismic zones, with resistance to earthquakes up to 9 on the Richter scale.",
+          "applications": "Aggressive soils and difficult geotechnical conditions.",
+          "applications2": "Areas with extreme winds, up to 9 on the Beaufort scale.",
+          "applications3": "Overhead power lines with voltages between 35 kV and 700 kV, for various applications."
         }
       },
       "consultation": {
         "title": "Consultation",
         "features": {
-          "efficiency": "Fast & Efficient – Reduces construction time with ready-made poles.",
-          "quality": "Consistent Quality – Manufactured to exact specifications.",
-          "cost": "Cost-Effective – Minimizes labor costs and material waste."
+          "efficiency": "Selection of the optimal pole type, depending on specific site and load conditions.",
+          "quality": "Integration of our solutions into existing technical projects.",
+          "cost": "Adaptation of documentation according to local and international regulatory requirements.",
+          "cost2": "Our team collaborates closely with you to develop a plan perfectly adapted to your objectives and execution conditions."
         }
       },
       "transport": {
         "title": "Transport",
         "features": {
-          "durability": "Enhanced Durability – Increases load-bearing capacity.",
-          "performance": "Reliable Performance – Ideal for high-rise buildings and infrastructure.",
-          "standards": "Meets Industry Standards – Built to withstand extreme conditions."
+          "durability": "Prompt and safe transport, anywhere in the Republic of Moldova and the Eurasian space, in compliance with all safety regulations.",
+          "performance": "Specialized technical support for the correct installation and use of poles.",
+          "standards": "Monitoring of the delivery route, for transparency and real-time information on transport status."
         }
       },
       "logistics": {
         "title": "Logistics",
         "features": {
-          "sustainability": "Sustainable Materials – Reduces environmental impact.",
-          "efficiency": "Energy-Efficient Production – Lower carbon footprint in manufacturing.",
-          "performance": "Long-Lasting Performance – Maintains strength over time."
+          "sustainability": "Customized logistics planning, adapted to the requirements of each project for efficient and delay-free deliveries.",
+          "efficiency": "Delivery with a specialized convoy, adapted to the dimensions and weight of the poles, for safe transport, according to road and technical regulations.",
+          "performance": "Preparation with specialized equipment for optimal protection of poles during transport and unloading."
         }
       }
     },
@@ -232,16 +235,16 @@
       "title": "Our Process",
       "steps": {
         "consultation": {
-          "title": "Consultation & Planning",
-          "description": "We begin by understanding your project's unique needs, ensuring we provide the best concrete solutions. Our team works closely with you to develop a plan that aligns with your structural and aesthetic requirements."
+          "title": "Consultation and Planning",
+          "description": "We start by understanding the unique needs of your project, ensuring we offer the best concrete solutions. Our team works closely with you to develop a plan that aligns with your structural and aesthetic requirements."
         },
         "manufacturing": {
           "title": "Manufacturing",
-          "description": "Using advanced technology and high-quality materials, we manufacture precision-engineered concrete poles. Each product undergoes strict quality control measures to ensure durability, strength, and compliance with industry standards."
+          "description": "Using advanced technology and high-quality materials, we manufacture precisely engineered concrete poles. Each product undergoes strict quality control measures to ensure durability, strength, and compliance with industry standards."
         },
         "delivery": {
           "title": "Delivery",
-          "description": "Our team ensures timely delivery and seamless installation, minimizing disruptions to your project timeline. We provide expert guidance throughout the process, ensuring each poles is placed with precision and care."
+          "description": "Our team ensures timely delivery and hassle-free installation, minimizing disruptions to your project schedule. We offer expert guidance throughout the process, ensuring each pole is positioned with precision and care."
         }
       }
     }
@@ -249,62 +252,26 @@
   "projects": {
     "hero": {
       "title": "Our Projects",
-      "description": "At Venador Prim, we take pride in delivering high-quality concrete solutions for various construction projects. From commercial buildings to large-scale infrastructure, our concrete poles provide strength, durability, and reliability."
+      "description": "At Venador Prim, we pride ourselves on providing high-quality services for a variety of projects, both nationally and internationally."
     },
     "showcase": {
-      "title": "Built to Last, Engineered for Excellence",
+      "title": "Designed to last, built to endure.",
       "skylineTower": {
-        "title": "Skyline Tower – High-Rise Reinforcement",
-        "description": "A 50-story commercial tower strengthened with our reinforced concrete poles, ensuring maximum load-bearing capacity and long-term stability.",
+        "title": "Technology that replaces classic methods.",
+        "description": "Centrifugally cast prestressed concrete poles offer significant advantages over traditional solutions.",
         "features": {
-          "earthquake": "Engineered for earthquake resistance.",
-          "strength": "High-strength concrete for skyscrapers.",
-          "integrity": "Ensuring long-term structural integrity."
+          "earthquake": "Suitable for power lines with voltages from 35 kV to 700 kV.",
+          "strength": "Extended lifespan, between 50 and 70 years.",
+          "integrity": "Increased seismic resistance – specially designed for high seismic risk zones."
         }
       },
       "metroBridge": {
-        "title": "Metro Bridge – Infrastructure Excellence",
-        "description": "A large-scale transportation project utilizing our precast concrete poles for enhanced durability and seamless construction efficiency.",
+        "title": "The efficient solution for durable electrical networks.",
+        "description": "More value for your investment – with prestressed concrete poles, efficiency meets durability.",
         "features": {
-          "installation": "Quick installation with precast technology.",
-          "traffic": "Designed for heavy traffic load.",
-          "weather": "Resistant to extreme weather conditions."
-        }
-      },
-      "residentialComplex": {
-        "title": "Modern Residential Complex – Solid Foundations",
-        "description": "A contemporary housing development built on our custom concrete poles, designed to provide structural integrity and safety.",
-        "features": {
-          "sustainable": "Sustainable and durable materials.",
-          "support": "Supports multi-story residential structures.",
-          "safety": "Designed for seismic safety."
-        }
-      },
-      "luxuryHotel": {
-        "title": "Luxury Hotel – Architectural Strength",
-        "description": "A premium hotel project where our high-quality concrete poles contribute to both structural reliability and modern aesthetics.",
-        "features": {
-          "design": "Custom-designed for architectural appeal.",
-          "stability": "Provides long-lasting stability.",
-          "aesthetics": "Enhances luxury and modern design."
-        }
-      },
-      "warehouse": {
-        "title": "Industrial Warehouse – Heavy-Duty Support",
-        "description": "A high-capacity warehouse supported by our industrial-grade concrete poles, ensuring long-lasting performance under heavy loads.",
-        "features": {
-          "strength": "Withstands extreme weight and stress.",
-          "resistance": "Fire-resistant and durable materials.",
-          "optimization": "Optimized for large-scale storage."
-        }
-      },
-      "officePark": {
-        "title": "Sustainable Office Park – Eco-Friendly Innovation",
-        "description": "An environmentally conscious construction using our eco-friendly concrete solutions, reducing carbon footprint without compromising strength.",
-        "features": {
-          "carbon": "Uses low-carbon concrete mix.",
-          "efficiency": "Energy-efficient and sustainable.",
-          "certification": "Designed for long-term green certification."
+          "installation": "Reduced costs compared to metal pylons.",
+          "traffic": "No additional maintenance requirements, which generates long-term savings.",
+          "weather": "Compatible with aggressive soils, without compromising performance."
         }
       }
     }
@@ -314,7 +281,7 @@
       "title": "Testing Process",
       "slides": {
         "materialTesting": {
-          "alt": "Material testing in laboratory"
+          "alt": "Material testing in the laboratory"
         },
         "structuralInspection": {
           "alt": "Structural inspection of concrete poles"
@@ -326,76 +293,55 @@
           "alt": "Load testing equipment for concrete poles"
         },
         "durabilityTesting": {
-          "alt": "Durability testing in environmental chamber"
+          "alt": "Durability test in climatic chamber"
         }
       }
     },
     "certifications": {
-      "title": "Our Certifications",
-      "description": "At Venador Prim, we adhere to the highest industry standards, ensuring our concrete poles meet strict quality, durability, and safety regulations. Our certifications reflect our commitment to excellence, reliability, and superior craftsmanship in construction.",
+      "title": "Our Certificates",
+      "description": "At Venador Prim, we adhere to the highest standards in the precast industry, ensuring that every pole produced meets strict requirements for quality, durability, and safety. Our certificates attest to compliance with national and international construction regulations EN 12843:2004, the quality of materials and manufacturing process, product reliability under extreme operating conditions, our commitment to technical excellence, and sustainability. Choose safety, choose Venador Prim.",
       "iso": {
-        "name": "ISO 9001:2015"
-      },
-      "ceMark": {
-        "name": "CE Mark"
-      },
-      "excellence": {
-        "name": "Industry Excellence Awards"
-      },
-      "leed": {
-        "name": "LEED Certification"
-      },
-      "usgbc": {
-        "name": "US Green Building Council"
-      },
-      "trustedSeller": {
-        "name": "Trusted Seller"
-      },
-      "trusted": {
-        "name": "100% Trusted"
-      },
-      "astm": {
-        "name": "ASTM International"
-      },
-      "aci": {
-        "name": "ACI Certification"
-      },
-      "bba": {
-        "name": "BBA"
-      },
-      "igbc": {
-        "name": "IGBC Member"
-      },
-      "usgbcLeed": {
-        "name": "USGBC LEED"
+        "name": "EN 12843:2004"
       }
     }
   },
   "contact": {
     "hero": {
-      "title": "Contact us",
-      "description": "At Venador Prim, we're ready to bring your vision to life with our high-quality concrete solutions. Whether you have a question, need a quote, or want to discuss your project, our team is here to help."
+      "title": "Contact Us",
+      "description": "At Venador Prim, we are ready to turn your vision into reality with our high-quality services. Whether you have a question, need a quote, or want to discuss your project, our team is here to help."
     },
     "form": {
       "title": "Send Us a Message",
-      "description": "Have a project in mind? Fill out the form below, and our team will get back to you as soon as possible.",
-      "name": "Name *",
-      "lastname": "Lastname *",
-      "email": "E-Mail Address *",
-      "telephone": "Telephone *",
+      "description": "Have a project in mind? Fill out the form below, and our team will contact you as soon as possible.",
+      "name": "Last Name *",
+      "lastname": "First Name *",
+      "email": "Email Address *",
+      "telephone": "Phone *",
       "subject": "Subject",
       "message": "Message",
-      "submit": "Submit Now",
+      "submit": "Send Now",
       "subjects": {
         "general": "General Inquiry",
         "support": "Technical Support",
         "sales": "Sales",
         "other": "Other"
-      }
+      },
+      "successMessage": "Message send successfully!",
+      "sending": "Sending...",
+      "errors": {
+        "messageTooShort": "Message must be at least 10 characters",
+  "messageRequired": "Message is required",
+  "phoneInvalid": "Please enter a valid phone number",
+  "phoneRequired": "Phone number is required",
+  "emailInvalid": "Please enter a valid email address",
+  "emailRequired": "Email address is required",
+  "lastnameRequired": "Last name is required",
+  "nameRequired": "Name is required"
+}
     },
     "office": {
       "title": "Our Office",
-      "address": "Chisinau MD, Hincesti Road 290, MD-2051, Moldova",
+      "address": "Chisinau MD, 290 Hîncești Highway, MD-2051, Moldova",
       "phone": "+373 692 58 899",
       "email": "info@venadorprim.com, finance@venadorprim.com",
       "mapTitle": "Office Location"

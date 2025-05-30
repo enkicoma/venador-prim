@@ -325,7 +325,19 @@
         "support": "Suport Tehnic",
         "sales": "Vânzări",
         "other": "Altele"
-      }
+      },
+      "successMessage": "Mesajul a fost trimis cu succes!",
+        "sending": "Se trimite...",
+        "errors": {
+            "messageTooShort": "Mesajul trebuie să aibă cel puțin 10 caractere",
+  "messageRequired": "Mesajul este obligatoriu",
+  "phoneInvalid": "Vă rugăm să introduceți un număr de telefon valid",
+  "phoneRequired": "Numărul de telefon este obligatoriu",
+  "emailInvalid": "Vă rugăm să introduceți o adresă de email validă",
+  "emailRequired": "Adresa de email este obligatorie",
+  "lastnameRequired": "Numele de familie este obligatoriu",
+  "nameRequired": "Numele este obligatoriu"
+}
     },
     "office": {
       "title": "Biroul Nostru",
