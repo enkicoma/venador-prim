@@ -6,11 +6,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: 'Googlebot',
         allow: ['/'],
-        disallow: '/private/',
       },
       {
         userAgent: ['Applebot', 'Bingbot'],
-        disallow: ['/private/'],
+        allow: ['/'],
       },
     ],
     sitemap: 'https://venadorprim.com/sitemap.xml',
