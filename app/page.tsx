@@ -76,7 +76,7 @@ export async function generateMetadata({
   params: Promise<{ lang?: string }>;  // ✅ CORRECT: Promise type
 }): Promise<Metadata> {
   const resolvedParams = await params;  // ✅ CORRECT: Now you can await it
-  const lang = (resolvedParams?.lang || "en") as keyof typeof seoMetadata;
+  const lang = (resolvedParams?.lang || "ro") as keyof typeof seoMetadata;
   const meta = seoMetadata[lang];
 
   return {
@@ -106,8 +106,8 @@ export async function generateMetadata({
     alternates: {
       canonical: "https://venadorprim.com",
       languages: {
-        en: "https://venadorprim.com/en",
         ro: "https://venadorprim.com/ro",
+        en: "https://venadorprim.com/en",
         ru: "https://venadorprim.com/ru",
       },
     },
@@ -120,7 +120,7 @@ export default async function Home({
   params: Promise<{ lang?: string }> 
 }) {
   const resolvedParams = await params;
-  const structuredData = getHomeStructuredData(resolvedParams?.lang || "en");
+  const structuredData = getHomeStructuredData(resolvedParams?.lang || "ro");
 
   return (
     <>

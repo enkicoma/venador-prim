@@ -101,7 +101,7 @@ export async function generateMetadata({
   params: Promise<{ lang?: string }>;
 }): Promise<Metadata> {
   const resolvedParams = await params;
-  const lang = (resolvedParams?.lang || "en") as keyof typeof seoMetadata;
+  const lang = (resolvedParams?.lang || "ro") as keyof typeof seoMetadata;
   const meta = seoMetadata[lang];
 
   return {
@@ -131,8 +131,8 @@ export async function generateMetadata({
     alternates: {
       canonical: "https://venadorprim.com/projects",
       languages: {
-        en: "https://venadorprim.com/en/projects",
         ro: "https://venadorprim.com/ro/projects",
+        en: "https://venadorprim.com/en/projects",
         ru: "https://venadorprim.com/ru/projects",
       },
     },
@@ -145,7 +145,7 @@ export default async function ProjectPage({
   params: Promise<{ lang?: string }>;
 }) {
   const resolvedParams = await params;
-  const lang = (resolvedParams?.lang || "en") as keyof typeof seoMetadata;
+  const lang = (resolvedParams?.lang || "ro") as keyof typeof seoMetadata;
 console.log(lang)
   return (
     <>
