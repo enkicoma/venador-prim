@@ -104,7 +104,7 @@ export async function generateMetadata({
       images: [heroImage.src],
     },
     alternates: {
-      canonical: "https://venadorprim.com/ro",
+      canonical: "https://venadorprim.com/about",
       languages: {
         ro: "https://venadorprim.com/ro",
         en: "https://venadorprim.com/en",
