@@ -120,7 +120,7 @@ export async function generateMetadata({
   params: Promise<{ lang?: string }>;  // ✅ FIXED: Changed to Promise
 }): Promise<Metadata> {
   const resolvedParams = await params;
-  const lang = (resolvedParams?.lang || "en") as keyof typeof seoMetadata;
+  const lang = (resolvedParams?.lang || "ro") as keyof typeof seoMetadata;
   const meta = seoMetadata[lang];
 
   return {
@@ -150,8 +150,8 @@ export async function generateMetadata({
     alternates: {
       canonical: "https://venadorprim.com/services",
       languages: {
-        en: "https://venadorprim.com/en/services",
         ro: "https://venadorprim.com/ro/services",
+        en: "https://venadorprim.com/en/services",
         ru: "https://venadorprim.com/ru/services",
       },
     },
@@ -164,7 +164,7 @@ export default async function ServicesPage({
   params: Promise<{ lang?: string }>;  
 }) {
   const resolvedParams = await params;  
-  const lang = (resolvedParams?.lang || "en") as keyof typeof seoMetadata;
+  const lang = (resolvedParams?.lang || "ro") as keyof typeof seoMetadata;
     console.log("Current language:", lang);
   return (
     <>

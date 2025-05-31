@@ -12,8 +12,8 @@ export interface Dictionary {
     contact: string;
   };
   languages: {
-    en: string;
     ro: string;
+    en: string;
     ru: string;
   };
   home: {

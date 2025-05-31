@@ -14,8 +14,8 @@ i18n.use(initReactI18next).init({
           contact: 'Contact',
         },
         languages: {
-          en: 'English',
           ro: 'Romanian',
+          en: 'English',
           ru: 'Russian',
         },
       },
@@ -31,8 +31,8 @@ i18n.use(initReactI18next).init({
           contact: 'Contact',
         },
         languages: {
-          en: 'Engleză',
           ro: 'Română',
+          en: 'Engleză',
           ru: 'Rusă',
         },
       },
@@ -48,15 +48,15 @@ i18n.use(initReactI18next).init({
           contact: 'Контакты',
         },
         languages: {
-          en: 'Английский',
           ro: 'Румынский',
+          en: 'Английский',
           ru: 'Русский',
         },
       },
     },
   },
-  lng: 'en',
-  fallbackLng: 'en',
+  lng: 'ro',
+  fallbackLng: 'ro',
   interpolation: {
     escapeValue: false,
   },

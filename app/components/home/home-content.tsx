@@ -28,7 +28,7 @@ export default function HomeContent() {
   const certificationsData = {
     title: t("home.certifications.title"),
     description: t("home.certifications.description"),
-    certifications: [{ name: "ISO 9001:2015", image: certificate1.src }],
+    certifications: [{ name: "CPR", image: certificate1.src }],
   };
 
   const whoWeAreFeatures = {
