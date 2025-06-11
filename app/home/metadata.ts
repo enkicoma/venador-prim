@@ -1,8 +1,8 @@
 export const metadata = {
   ro: {
-    title: "Venador Prim | Producător de Stâlpi din Beton Precomprimat",
+    title: "Venador Prim | Producător de Stâlpi din Beton Precomprimat (LEA) | Republica Moldova",
     description:
-      "Lider în producția de stâlpi din beton precomprimat, stâlpi centrifugați și piloni pentru linii electrice aeriene. Calitate superioară și durabilitate garantată.",
+      "Suntem prima uzină din Republica Moldova, lider în producția de stâlpi din beton precomprimat, stâlpi centrifugați și piloni pentru linii electrice aeriene (LEA). Calitate superioară și durabilitate garantată.| Parcul Industrial FAIP | ",
     keywords: [
       "stalpi din beton precomrimat",
       "stalpi din beton precomrimat Moldova",
